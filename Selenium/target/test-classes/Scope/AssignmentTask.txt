@@ -1,0 +1,11 @@
+1. Select "Option 2" Checkbox and grab its corresponding text. 
+
+2. From the Dropdown select the drop down based on the value of checkbox grabbed from Step 1. (But do not hardcode the value)
+
+3. Enter Step 2 grabbed text into the Alert Box. (Do not hard Code the value)
+
+4. Click on Alert.
+
+5. Verify if, text grabbed from Step 1 is present in the pop-up message.
+
+6. 

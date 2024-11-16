@@ -1,0 +1,12 @@
+1. Count the number of Links in the page.
+
+2. Count the number of Links in the Footer Section.
+
+3. Count total number of Links in the First Col of the Footer Section.
+
+4. Check if the Links are opening or not.
+
+5. Open all the Links in separate Tab.
+
+6. Now navigate to each and every tab, to grab their titles.
+

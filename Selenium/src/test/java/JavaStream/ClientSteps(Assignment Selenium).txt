@@ -1,0 +1,3 @@
+1. Go to https://rahulshettyacademy.com/seleniumPractise/#/offers
+
+2. After clicking on VegName arrow drop down, we need to check if the vegetables are displayed in the sorted order or not.

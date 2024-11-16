@@ -1,0 +1,2 @@
+Iterate through every link the Footer Section, and check if they are all working or not.
+If not fail the Script.

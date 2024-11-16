@@ -1,0 +1,11 @@
+Part-1
+
+1. Go to https://www.amazon.in/?tag=googmantxtmob170-21&ascsubtag=_k_Cj0KCQjw7Py4BhCbARIsAMMx-_LG-WM16e5Z2hjnX2RKjSb0VRnyLIsF9hu7LACH6SE7aJL45d1bHHkaAsqXEALw_wcB_k_
+
+2. In the main search bar locate All Dropdown
+
+3. Select Books
+
+Part-2
+
+1. In the Main Search Box, type "hit" and select "hitchhiker's guide to galaxy".

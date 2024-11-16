@@ -1,0 +1,7 @@
+1. Go to https://rahulshettyacademy.com/AutomationPractice/
+
+2. Scroll to the entire bottom of the Page.
+
+3. In the footer section, for the first column, open all the links in separate tabs.
+
+4. Close all the tabs except for the current tab.

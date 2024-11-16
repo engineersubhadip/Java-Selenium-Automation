@@ -1,0 +1,7 @@
+1. Go to https://rahulshettyacademy.com/AutomationPractice/
+
+2. Go to the Auto-suggestive input box and type "unit".
+
+3. Select "United States".
+
+4. Verify the value after selection.

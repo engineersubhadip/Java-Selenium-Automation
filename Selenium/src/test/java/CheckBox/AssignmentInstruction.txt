@@ -1,0 +1,7 @@
+1. Navigate to Below URL:
+
+https://rahulshettyacademy.com/AutomationPractice/
+
+2. Check the first  Checkbox and verify if it is successfully checked and Uncheck it again to verify if it is successfully Unchecked
+
+3. How to get the Count of number of check boxes present in the page ?

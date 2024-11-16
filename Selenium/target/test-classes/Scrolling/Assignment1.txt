@@ -1,0 +1,7 @@
+1. Go to https://rahulshettyacademy.com/AutomationPractice/
+
+2. Go to the Courses Table.
+
+3. Find total number of rows and cols.
+
+4. Print the content of the 2nd row.

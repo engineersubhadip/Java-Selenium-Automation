@@ -1,0 +1,7 @@
+1. Select Delhi as Departure
+2. Select Chennai as Arrival
+3. Family and Friends checkbox
+4. Current day departure
+5. 3 Adults and 1 child
+6. Return date should be disabled
+7. Click Search
