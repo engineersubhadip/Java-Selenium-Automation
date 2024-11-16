@@ -10,17 +10,17 @@ import org.testng.annotations.Test;
 
 public class TestNGBasics {
 	
-	@Test
+	@Test(priority=1)
 	public void openApplication() { 
 		System.out.println("Open the Application");
 	}
 	
-	@Test
+	@Test(priority=2)
 	public void login() {
 		System.out.println("Log-in the Application");
 	}
 	
-	@Test
+	@Test(priority=3)
 	public void logout() {
 		System.out.println("Log-out the Application");
 	}
