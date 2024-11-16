@@ -1,9 +1,10 @@
-applyBackground=false
+applyBackground=true
 approved.defs.file.last.changed.time=1693315978000
 configurationInstallLocation=/C\:/Users/subha/eclipse/java-2024-09/eclipse/
 eclipse.preferences.version=1
 iconcolormode=primary
-last.download.attempt.time=1731767836656
-lastConfiguration=1728446579240
+includeThemingInOomph=false
+last.download.attempt.time=1731770585949
+lastConfiguration=1731770654466
 newinstall=true
 workbench.theme=Dark Gray
