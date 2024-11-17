@@ -20,12 +20,12 @@ public class Before_After_Method {
 		System.out.println("Logging in the Application...");
 	}
 	
-	@Test
+	@Test(priority=1)
 	public void search() {
 		System.out.println("This is the Search Functionality.");
 	}
 	
-	@Test
+	@Test(priority=2)
 	public void advSearch() {
 		System.out.println("This is the Advance Seach Functionality.");
 	}
