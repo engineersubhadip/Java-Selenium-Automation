@@ -51,7 +51,7 @@ public class DataProviders {
 		}
 	}
 	
-	@DataProvider(name="dp")
+	@DataProvider(name="dp", indices= {1,2})
 	public Object[][] loginData() {
 		Object data[][] = new Object[4][2];
 		data[0][0] = "sun87";
