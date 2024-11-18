@@ -1,95 +1,101 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
+<testng-results ignored="0" total="5" passed="3" failed="1" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-11-17T12:30:16 IST" name="Suite" finished-at="2024-11-17T12:30:16 IST" duration-ms="106">
+  <suite started-at="2024-11-18T11:25:44 IST" name="Default suite" finished-at="2024-11-18T11:25:44 IST" duration-ms="67">
     <groups>
     </groups>
-    <test started-at="2024-11-17T12:30:16 IST" name="Test Module 1" finished-at="2024-11-17T12:30:16 IST" duration-ms="39">
-      <class name="annotations_2.combinedAnnotations.Class1">
-        <test-method is-config="true" signature="bt()[pri:0, instance:annotations_2.combinedAnnotations.Class1@35d019a3]" started-at="2024-11-17T12:30:16 IST" name="bt" finished-at="2024-11-17T12:30:16 IST" duration-ms="0" status="PASS">
+    <test started-at="2024-11-18T11:25:44 IST" name="Default test" finished-at="2024-11-18T11:25:44 IST" duration-ms="67">
+      <class name="dependencyMethods_3.DependencyMethod">
+        <test-method signature="openApp()[pri:1, instance:dependencyMethods_3.DependencyMethod@35cabb2a]" started-at="2024-11-18T11:25:44 IST" name="openApp" finished-at="2024-11-18T11:25:44 IST" duration-ms="18" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- bt -->
-        <test-method signature="fun1()[pri:0, instance:annotations_2.combinedAnnotations.Class1@35d019a3]" started-at="2024-11-17T12:30:16 IST" name="fun1" finished-at="2024-11-17T12:30:16 IST" duration-ms="6" status="PASS">
+        </test-method> <!-- openApp -->
+        <test-method signature="login()[pri:2, instance:dependencyMethods_3.DependencyMethod@35cabb2a]" started-at="2024-11-18T11:25:44 IST" name="login" finished-at="2024-11-18T11:25:44 IST" depends-on-methods="dependencyMethods_3.DependencyMethod.openApp" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- fun1 -->
-        <test-method signature="fun2()[pri:0, instance:annotations_2.combinedAnnotations.Class1@35d019a3]" started-at="2024-11-17T12:30:16 IST" name="fun2" finished-at="2024-11-17T12:30:16 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- login -->
+        <test-method signature="search()[pri:3, instance:dependencyMethods_3.DependencyMethod@35cabb2a]" started-at="2024-11-18T11:25:44 IST" name="search" finished-at="2024-11-18T11:25:44 IST" depends-on-methods="dependencyMethods_3.DependencyMethod.login" duration-ms="2" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertTrue(Assert.java:45)
+at org.testng.Assert.assertTrue(Assert.java:55)
+at dependencyMethods_3.DependencyMethod.search(DependencyMethod.java:28)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- fun2 -->
-      </class> <!-- annotations_2.combinedAnnotations.Class1 -->
-      <class name="annotations_2.combinedAnnotations.Class2">
-        <test-method signature="fun3()[pri:0, instance:annotations_2.combinedAnnotations.Class2@2a65fe7c]" started-at="2024-11-17T12:30:16 IST" name="fun3" finished-at="2024-11-17T12:30:16 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- search -->
+        <test-method signature="advSearch()[pri:4, instance:dependencyMethods_3.DependencyMethod@35cabb2a]" started-at="2024-11-18T11:25:44 IST" name="advSearch" finished-at="2024-11-18T11:25:44 IST" depends-on-methods="dependencyMethods_3.DependencyMethod.search, dependencyMethods_3.DependencyMethod.login" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method DependencyMethod.advSearch()[pri:4, instance:dependencyMethods_3.DependencyMethod@35cabb2a] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method DependencyMethod.advSearch()[pri:4, instance:dependencyMethods_3.DependencyMethod@35cabb2a] depends on not successfully finished methods
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- fun3 -->
-        <test-method signature="fun4()[pri:0, instance:annotations_2.combinedAnnotations.Class2@2a65fe7c]" started-at="2024-11-17T12:30:16 IST" name="fun4" finished-at="2024-11-17T12:30:16 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- advSearch -->
+        <test-method signature="logout()[pri:5, instance:dependencyMethods_3.DependencyMethod@35cabb2a]" started-at="2024-11-18T11:25:44 IST" name="logout" finished-at="2024-11-18T11:25:44 IST" depends-on-methods="dependencyMethods_3.DependencyMethod.login" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- fun4 -->
-        <test-method is-config="true" signature="at()[pri:0, instance:annotations_2.combinedAnnotations.Class2@2a65fe7c]" started-at="2024-11-17T12:30:16 IST" name="at" finished-at="2024-11-17T12:30:16 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- at -->
-      </class> <!-- annotations_2.combinedAnnotations.Class2 -->
-    </test> <!-- Test Module 1 -->
-    <test started-at="2024-11-17T12:30:16 IST" name="Test Module 2" finished-at="2024-11-17T12:30:16 IST" duration-ms="12">
-      <class name="annotations_2.combinedAnnotations.Class1">
-        <test-method is-config="true" signature="bs()[pri:0, instance:annotations_2.combinedAnnotations.Class1@35d019a3]" started-at="2024-11-17T12:30:16 IST" name="bs" finished-at="2024-11-17T12:30:16 IST" duration-ms="7" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- bs -->
-      </class> <!-- annotations_2.combinedAnnotations.Class1 -->
-      <class name="annotations_2.combinedAnnotations.Class4">
-        <test-method is-config="true" signature="bt()[pri:0, instance:annotations_2.combinedAnnotations.Class4@22555ebf]" started-at="2024-11-17T12:30:16 IST" name="bt" finished-at="2024-11-17T12:30:16 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- bt -->
-        <test-method signature="fun7()[pri:0, instance:annotations_2.combinedAnnotations.Class4@22555ebf]" started-at="2024-11-17T12:30:16 IST" name="fun7" finished-at="2024-11-17T12:30:16 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- fun7 -->
-        <test-method signature="fun8()[pri:0, instance:annotations_2.combinedAnnotations.Class4@22555ebf]" started-at="2024-11-17T12:30:16 IST" name="fun8" finished-at="2024-11-17T12:30:16 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- fun8 -->
-      </class> <!-- annotations_2.combinedAnnotations.Class4 -->
-      <class name="annotations_2.combinedAnnotations.Class3">
-        <test-method is-config="true" signature="bm()[pri:0, instance:annotations_2.combinedAnnotations.Class3@292b08d6]" started-at="2024-11-17T12:30:16 IST" name="bm" finished-at="2024-11-17T12:30:16 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- bm -->
-        <test-method signature="fun5()[pri:0, instance:annotations_2.combinedAnnotations.Class3@292b08d6]" started-at="2024-11-17T12:30:16 IST" name="fun5" finished-at="2024-11-17T12:30:16 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- fun5 -->
-        <test-method is-config="true" signature="bm()[pri:0, instance:annotations_2.combinedAnnotations.Class3@292b08d6]" started-at="2024-11-17T12:30:16 IST" name="bm" finished-at="2024-11-17T12:30:16 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- bm -->
-        <test-method is-config="true" signature="am()[pri:0, instance:annotations_2.combinedAnnotations.Class3@292b08d6]" started-at="2024-11-17T12:30:16 IST" name="am" finished-at="2024-11-17T12:30:16 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- am -->
-        <test-method signature="fun6()[pri:0, instance:annotations_2.combinedAnnotations.Class3@292b08d6]" started-at="2024-11-17T12:30:16 IST" name="fun6" finished-at="2024-11-17T12:30:16 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- fun6 -->
-        <test-method is-config="true" signature="am()[pri:0, instance:annotations_2.combinedAnnotations.Class3@292b08d6]" started-at="2024-11-17T12:30:16 IST" name="am" finished-at="2024-11-17T12:30:16 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- am -->
-        <test-method is-config="true" signature="at()[pri:0, instance:annotations_2.combinedAnnotations.Class3@292b08d6]" started-at="2024-11-17T12:30:16 IST" name="at" finished-at="2024-11-17T12:30:16 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- at -->
-        <test-method is-config="true" signature="bs()[pri:0, instance:annotations_2.combinedAnnotations.Class3@292b08d6]" started-at="2024-11-17T12:30:16 IST" name="bs" finished-at="2024-11-17T12:30:16 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- bs -->
-      </class> <!-- annotations_2.combinedAnnotations.Class3 -->
-    </test> <!-- Test Module 2 -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- logout -->
+      </class> <!-- dependencyMethods_3.DependencyMethod -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

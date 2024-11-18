@@ -3,13 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testNGBasics_1.SeleniumTestNGCompilation">
+      <class name="dependencyMethods_3.DependencyMethod">
         <methods>
-          <include name="checkLogo"/>
+          <include name="search"/>
+          <include name="openApp"/>
           <include name="login"/>
-          <include name="logout"/>
+          <include name="advSearch"/>
         </methods>
-      </class> <!-- testNGBasics_1.SeleniumTestNGCompilation -->
+      </class> <!-- dependencyMethods_3.DependencyMethod -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
