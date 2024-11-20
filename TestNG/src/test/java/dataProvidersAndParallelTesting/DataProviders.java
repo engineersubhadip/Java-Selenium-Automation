@@ -41,14 +41,13 @@ public class DataProviders {
 		
 		Thread.sleep(5000);
 		
-		boolean status = driver.findElement(By.xpath("//h2[normalize-space()='My Account']")).isDisplayed();
-		
-		if (status) {
-			driver.findElement(By.xpath("//a[@class='list-group-item'][normalize-space()='Logout']")).click();
+		try {
+			driver.findElement(By.xpath("//span[@class='oxd-userdropdown-tab']")).isDisplayed();
 			Assert.assertTrue(true);
-		}else {
+		}catch(Exception e){
 			Assert.fail();
 		}
+		
 	}
 	
 	@DataProvider(name="dp", indices= {1,2})

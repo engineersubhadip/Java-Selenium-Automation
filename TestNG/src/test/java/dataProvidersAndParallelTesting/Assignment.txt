@@ -1,0 +1,7 @@
+1. Go to https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+
+2. I want to test this login functionality against 5 sets of Data.
+
+3. I want to execute this test case on Chrome, Edge and FireFox 
+
+4. Do this test serially and parallelly.
