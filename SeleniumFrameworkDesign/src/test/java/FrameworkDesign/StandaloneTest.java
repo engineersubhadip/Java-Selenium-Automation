@@ -94,9 +94,13 @@ public class StandaloneTest {
 		try {
 			countryList.stream().filter(currEle -> currEle.getText().equalsIgnoreCase("India")).forEach(currEle -> currEle.click());			
 		}catch(StaleElementReferenceException e) {
-			WebElement placeOrderButton = driver.findElement(By.xpath("//div[@class='actions']/a"));
-			placeOrderButton.click();
+			countryList = driver.findElements(By.xpath("//section[contains(@class,'ng-star-inserted')] //button"));
+			countryList.stream().filter(currEle -> currEle.getText().equalsIgnoreCase("India")).forEach(currEle -> currEle.click());
 		}
+		
+		
+		WebElement placeOrderButton = driver.findElement(By.xpath("//div[@class='actions']/a"));
+		placeOrderButton.click();
 
 //		Billing Page :-
 		
