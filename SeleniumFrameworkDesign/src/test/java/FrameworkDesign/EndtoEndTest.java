@@ -14,8 +14,6 @@ public class EndtoEndTest {
 		WebDriver driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
 
@@ -39,5 +37,24 @@ public class EndtoEndTest {
 		productcatalogue.addProductToCart("ADIDAS ORIGINAL");
 		
 		Assert.assertEquals(productcatalogue.cartVerification(), "Product Added To Cart"); 
+	
+		
+//		Verification of Cart and Place Order :-
+		
+		CartVerification cartverification = new CartVerification(driver);
+		
+		Assert.assertEquals(cartverification.verifyCart(userPurchase),1);
+		
+		cartverification.selectCountry("ind", "India");
+		
+		cartverification.checkoutClick();
+		
+//		Billing Page :-
+		
+		BillingPage billingpage = new BillingPage(driver);
+		
+		Assert.assertEquals(billingpage.getConfirmMessage(), "Thankyou for the order.".toLowerCase());
+		
+		driver.quit();
 	}
 }
