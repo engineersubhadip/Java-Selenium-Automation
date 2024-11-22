@@ -28,6 +28,14 @@ public class ProductCatalogue extends AbstractComponent {
 	By productListBy = By.xpath("//section[@id='products']/div[@class='container']/div[2] //div[@class='card']");
 	
 	By addToCart = By.cssSelector(".card-body button:last-of-type");
+	
+	By animeLoader =  By.cssSelector(".ng-animating");
+	
+	By cartConfirmMessage = By.xpath("//div[@id='toast-container'] //div[@aria-label='Product Added To Cart']");
+	
+	
+	@FindBy(xpath="//div[@id='toast-container'] //div[@aria-label='Product Added To Cart']")
+	WebElement cartMessage;
 
 //	Actions :-
 
@@ -48,5 +56,13 @@ public class ProductCatalogue extends AbstractComponent {
 	public void addProductToCart(String productName) {
 		WebElement prod = getProductByName(productName);
 		prod.findElement(addToCart).click();
+	}
+	
+	
+	public String cartVerification() {
+		waitForElementToDisappear(animeLoader);
+		waitForElementToAppear(cartConfirmMessage);
+		
+		return cartMessage.getText();
 	}
 }
