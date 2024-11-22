@@ -42,17 +42,13 @@ public class CartVerification extends AbstractComponent{
 	@FindBy(xpath="//div[@class='actions']/a")
 	WebElement placeOrderBtn;
 	
-	public void clickCartIcon() {
-		cartIcon.click();
-	}
-	
 	public int verifyCart (String userPurchase) {
 		clickCartIcon();
 		int count = cartProduct.stream().filter(currEle -> currEle.getText().toLowerCase().contains(userPurchase)).collect(Collectors.toList()).size();
 		return count;
 	}
 	
-	public void selectCountry(String userInput, String destinationCountry) {
+	public void selectCountry(String userInput, String destinationCountry) throws InterruptedException {
 		checkOutBtn.click();
 		autoSuggestionBox.click();
 		autoSuggestionBox.sendKeys(userInput);
