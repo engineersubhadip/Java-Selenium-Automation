@@ -1,19 +1,13 @@
 package FrameworkDesign;
 
 import java.time.Duration;
-import java.util.List;
-import java.util.stream.Collectors;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
-public class LoginPage {
+public class EndtoEndTest {
 
 	public static void main(String[] args) throws InterruptedException {
 
@@ -24,7 +18,6 @@ public class LoginPage {
 
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
-		driver.get("https://rahulshettyacademy.com/client");
 
 //		User Credentials :-
 
@@ -36,8 +29,15 @@ public class LoginPage {
 
 		LandingPage loginPage = new LandingPage(driver);
 		
+		loginPage.goTo();
 		loginPage.loginApplication(userEmail, userPassword);
 
-
+//		Product Catalogue Page :-
+		
+		ProductCatalogue productcatalogue = new ProductCatalogue(driver);
+		
+		productcatalogue.addProductToCart("ADIDAS ORIGINAL");
+		
+		Assert.assertEquals(productcatalogue.cartVerification(), "Product Added To Cart"); 
 	}
 }
