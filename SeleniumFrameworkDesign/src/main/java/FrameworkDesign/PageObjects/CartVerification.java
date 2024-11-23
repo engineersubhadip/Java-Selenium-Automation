@@ -64,8 +64,11 @@ public class CartVerification extends AbstractComponent{
 	}
 	
 	
-	public void checkoutClick() {
+	public BillingPage checkoutClick() {
 		placeOrderBtn.click();
+		BillingPage billingpage = new BillingPage(driver);
+		
+		return billingpage;
 	}
 	
 }

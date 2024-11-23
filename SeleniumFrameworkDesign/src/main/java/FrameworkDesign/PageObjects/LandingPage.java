@@ -1,5 +1,7 @@
 package FrameworkDesign.PageObjects;
 
+import java.util.ArrayList;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -28,9 +30,7 @@ public class LandingPage extends AbstractComponent{
 	
 	@FindBy(xpath="//input[@id='login']")
 	WebElement submitBtn;
-//	div[aria-label='Incorrect email or password.']
-//	div[aria-label='Incorrect email or password.']
-	//div[@aria-label='Incorrect email or password.']
+
 	
 	@FindBy(xpath="//div[@id='toast-container'] //div[@aria-label='Incorrect email or password.']")
 	WebElement incorrectLogin;
@@ -39,10 +39,19 @@ public class LandingPage extends AbstractComponent{
 	
 //	Actions :-
 	
-	public void loginApplication(String email, String password) {
+	public ArrayList<Object> loginApplication(String email, String password) {
 		userEmail.sendKeys(email);
 		userPassword.sendKeys(password);
 		submitBtn.click();
+		
+		ProductCatalogue productcatalogue = new ProductCatalogue(driver);
+		OrdersPage orderspage = new OrdersPage(driver);
+		
+		ArrayList<Object> objects = new ArrayList<>();
+		objects.add(productcatalogue);
+		objects.add(orderspage);
+		
+		return objects;
 	}
 	
 	public void goTo() {

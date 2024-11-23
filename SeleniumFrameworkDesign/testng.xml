@@ -5,7 +5,7 @@
 
   <test name="End To End Test">
     <classes>
-      <class name="FrameworkDesign.Tests.EndtoEndTest"/>
+      <class name="FrameworkDesign.Tests.FunctionalTest"/>
     </classes>
   </test>
  

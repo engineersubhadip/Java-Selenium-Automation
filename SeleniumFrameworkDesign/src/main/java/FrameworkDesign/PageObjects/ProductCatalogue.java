@@ -53,9 +53,12 @@ public class ProductCatalogue extends AbstractComponent {
 		return prod;
 	}
 	
-	public void addProductToCart(String productName) {
+	public CartVerification addProductToCart(String productName) {
 		WebElement prod = getProductByName(productName);
 		prod.findElement(addToCart).click();
+		CartVerification cartverification = new CartVerification(driver);
+		
+		return cartverification;
 	}
 	
 	
