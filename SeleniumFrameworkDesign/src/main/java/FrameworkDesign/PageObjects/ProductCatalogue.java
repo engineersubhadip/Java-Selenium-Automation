@@ -1,4 +1,4 @@
-package FrameworkDesign;
+package FrameworkDesign.PageObjects;
 
 import java.util.List;
 

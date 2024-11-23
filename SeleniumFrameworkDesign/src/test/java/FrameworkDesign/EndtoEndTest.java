@@ -7,6 +7,11 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
+import FrameworkDesign.PageObjects.BillingPage;
+import FrameworkDesign.PageObjects.CartVerification;
+import FrameworkDesign.PageObjects.LandingPage;
+import FrameworkDesign.PageObjects.ProductCatalogue;
+
 public class EndtoEndTest {
 
 	public static void main(String[] args) throws InterruptedException {
