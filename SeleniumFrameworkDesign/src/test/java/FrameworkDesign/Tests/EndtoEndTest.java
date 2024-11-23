@@ -29,7 +29,7 @@ public class EndtoEndTest extends BaseTest{
 			
 			ProductCatalogue productcatalogue = new ProductCatalogue(driver);
 			
-			productcatalogue.addProductToCart("ADIDAS ORIGINAL");
+			productcatalogue.addProductToCart(userPurchase);
 			
 			Assert.assertEquals(productcatalogue.cartVerification(), "Product Added To Cart"); 
 		

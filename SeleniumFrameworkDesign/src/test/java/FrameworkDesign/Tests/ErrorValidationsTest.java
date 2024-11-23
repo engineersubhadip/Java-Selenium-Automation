@@ -11,7 +11,7 @@ import FrameworkDesign.PageObjects.LandingPage;
 import FrameworkDesign.PageObjects.ProductCatalogue;
 import FrameworkDesign.TestComponent.BaseTest;
 
-public class ErrorValidations extends BaseTest{
+public class ErrorValidationsTest extends BaseTest{
 
 		@Test
 		public void loginErrorValidation() throws IOException, InterruptedException {
