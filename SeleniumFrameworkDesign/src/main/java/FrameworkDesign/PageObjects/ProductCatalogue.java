@@ -48,7 +48,7 @@ public class ProductCatalogue extends AbstractComponent {
 
 	public WebElement getProductByName(String productName) {
 		WebElement prod = getProductList().stream()
-				.filter(product -> product.findElement(By.cssSelector("b")).getText().equals(productName)).findFirst()
+				.filter(product -> product.findElement(By.cssSelector("b")).getText().toLowerCase().contains(productName)).findFirst()
 				.orElse(null);
 		return prod;
 	}
@@ -59,7 +59,7 @@ public class ProductCatalogue extends AbstractComponent {
 	}
 	
 	
-	public String cartVerification() {
+	public String cartVerification() throws InterruptedException {
 		waitForElementToDisappear(animeLoader);
 		waitForElementToAppear(cartConfirmMessage);
 		

@@ -3,6 +3,7 @@ package FrameworkDesign.AbstractComponents;
 import java.time.Duration;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -22,11 +23,14 @@ public class AbstractComponent {
 	@FindBy(xpath="//button[contains(@routerlink,'cart')]")
 	WebElement cartIcon;
 	
-	public void clickCartIcon() {
-		cartIcon.click();
-	}
+	By cartIconBy = By.xpath("//button[contains(@routerlink,'cart')]");
 	
-//	wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//section[@id='products']/div[@class='container']")));
+	By spinnerLoaderBy = By.cssSelector("[class*='ngx-spinner-overlay']");
+	
+	public void clickCartIcon() throws InterruptedException {
+		JavascriptExecutor js = (JavascriptExecutor)this.driver;
+		js.executeScript("arguments[0].click();",cartIcon);
+	}
 
 	public void waitForElementToAppear(By findBy) {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
@@ -34,10 +38,10 @@ public class AbstractComponent {
 				.visibilityOfElementLocated(findBy));
 	}
 	
-//	wait.until(ExpectedConditions.invisibilityOf(driver.findElement(By.cssSelector(".ng-animating"))));
 	
-	public void waitForElementToDisappear(By findBy) {
+	public void waitForElementToDisappear(By findBy) throws InterruptedException {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
 		wait.until(ExpectedConditions.invisibilityOf(driver.findElement(findBy)));
 	}
+	
 }

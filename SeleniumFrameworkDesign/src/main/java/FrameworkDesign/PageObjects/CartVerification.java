@@ -42,10 +42,10 @@ public class CartVerification extends AbstractComponent{
 	@FindBy(xpath="//div[@class='actions']/a")
 	WebElement placeOrderBtn;
 	
-	public int verifyCart (String userPurchase) {
+	public boolean verifyCart (String userPurchase) throws InterruptedException {
 		clickCartIcon();
-		int count = cartProduct.stream().filter(currEle -> currEle.getText().toLowerCase().contains(userPurchase)).collect(Collectors.toList()).size();
-		return count;
+		boolean flag = cartProduct.stream().anyMatch(currEle -> currEle.getText().toLowerCase().contains(userPurchase));
+		return flag;
 	}
 	
 	public void selectCountry(String userInput, String destinationCountry) throws InterruptedException {

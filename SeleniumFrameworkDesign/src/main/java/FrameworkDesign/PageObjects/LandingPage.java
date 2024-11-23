@@ -28,7 +28,14 @@ public class LandingPage extends AbstractComponent{
 	
 	@FindBy(xpath="//input[@id='login']")
 	WebElement submitBtn;
+//	div[aria-label='Incorrect email or password.']
+//	div[aria-label='Incorrect email or password.']
+	//div[@aria-label='Incorrect email or password.']
 	
+	@FindBy(xpath="//div[@id='toast-container'] //div[@aria-label='Incorrect email or password.']")
+	WebElement incorrectLogin;
+	
+	By incorrectLoginBy =  By.xpath("//div[@id='toast-container'] //div[@aria-label='Incorrect email or password.']");
 	
 //	Actions :-
 	
@@ -40,5 +47,14 @@ public class LandingPage extends AbstractComponent{
 	
 	public void goTo() {
 		this.driver.get("https://rahulshettyacademy.com/client");
+	}
+	
+	public String getErrorMessage() {
+		
+		waitForElementToAppear(incorrectLoginBy);
+		
+		String incorrectMessage = incorrectLogin.getText();
+		
+		return incorrectMessage;
 	}
 }

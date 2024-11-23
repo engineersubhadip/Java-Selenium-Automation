@@ -11,10 +11,24 @@ import FrameworkDesign.PageObjects.LandingPage;
 import FrameworkDesign.PageObjects.ProductCatalogue;
 import FrameworkDesign.TestComponent.BaseTest;
 
-public class EndtoEndTest extends BaseTest{
+public class ErrorValidations extends BaseTest{
 
 		@Test
-		public void endToEndTest() throws IOException, InterruptedException {
+		public void loginErrorValidation() throws IOException, InterruptedException {
+//			User Credentials :-
+
+			String userEmail = "r16@abc.com";
+			String userPassword = "Test@1234";
+			
+//			Login Page :-
+			
+			loginPage.loginApplication(userEmail, userPassword);
+			
+			Assert.assertEquals(loginPage.getErrorMessage(), "Incorrect email or password.");
+		}
+		
+		@Test
+		public void productErrorValidation() throws IOException, InterruptedException {
 //			User Credentials :-
 
 			String userEmail = "r1@abc.com";
@@ -29,27 +43,13 @@ public class EndtoEndTest extends BaseTest{
 			
 			ProductCatalogue productcatalogue = new ProductCatalogue(driver);
 			
-			productcatalogue.addProductToCart("ADIDAS ORIGINAL");
-			
-			Assert.assertEquals(productcatalogue.cartVerification(), "Product Added To Cart"); 
-		
-			
-//			Verification of Cart and Place Order :-
+			productcatalogue.addProductToCart(userPurchase);
 			
 			CartVerification cartverification = new CartVerification(driver);
 			
-			Assert.assertEquals(cartverification.verifyCart(userPurchase),true);
-			
-			cartverification.selectCountry("ind", "India");
-			
-			cartverification.checkoutClick();
-			
-//			Billing Page :-
-			
-			BillingPage billingpage = new BillingPage(driver);
-			
-			Assert.assertEquals(billingpage.getConfirmMessage(), "Thankyou for the order.".toLowerCase());
+			Assert.assertEquals(cartverification.verifyCart(userPurchase),true); 
+		
 		}
-//		
+
 	
 }
