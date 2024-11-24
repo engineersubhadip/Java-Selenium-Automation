@@ -1,0 +1,16 @@
+[
+	{
+		
+		"userEmail" : "r1@abc.com",
+		"userPassword" : "Test@1234",
+		"userPurchase" : "adidas"
+	},
+	
+	{
+		"userEmail" : "shetty@gmail.com",
+		"userPassword" : "Iamking@000",
+		"userPurchase" : "iphone"
+	
+	}
+	
+]

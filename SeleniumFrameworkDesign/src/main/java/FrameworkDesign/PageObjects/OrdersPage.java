@@ -25,10 +25,11 @@ public class OrdersPage extends AbstractComponent {
 	
 	By productTableBy = By.xpath("//table[contains(@class,'table table-bordered')]");
 	
-	public boolean checkProduct(String userPurchase) {
+	public boolean checkProduct(String userPurchase) throws InterruptedException {
 		clickOrderIcon();
 		waitForElementToAppear(productTableBy);
 		
+		Thread.sleep(1000);
 		boolean status = productDescription.stream()
 				.anyMatch(currEle -> currEle.getText().toLowerCase().contains(userPurchase.toLowerCase()));
 		return status;

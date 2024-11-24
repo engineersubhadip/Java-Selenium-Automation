@@ -2,104 +2,87 @@
 <testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-11-24T12:50:58 IST" name="Default suite" finished-at="2024-11-24T12:51:35 IST" duration-ms="37442">
+  <suite started-at="2024-11-24T20:15:58 IST" name="Default suite" finished-at="2024-11-24T20:16:51 IST" duration-ms="53683">
     <groups>
+      <group name="purchase">
+        <method signature="FunctionalTest.endToEndTest(java.util.HashMap)[pri:0, instance:FrameworkDesign.Tests.FunctionalTest@18078bef]" name="endToEndTest" class="FrameworkDesign.Tests.FunctionalTest"/>
+      </group> <!-- purchase -->
     </groups>
-    <test started-at="2024-11-24T12:50:58 IST" name="Default test" finished-at="2024-11-24T12:51:35 IST" duration-ms="37442">
+    <test started-at="2024-11-24T20:15:58 IST" name="Default test" finished-at="2024-11-24T20:16:51 IST" duration-ms="53683">
       <class name="FrameworkDesign.Tests.FunctionalTest">
-        <test-method is-config="true" signature="launchApp()[pri:0, instance:FrameworkDesign.Tests.FunctionalTest@2f9f7dcf]" started-at="2024-11-24T12:50:58 IST" name="launchApp" finished-at="2024-11-24T12:51:01 IST" duration-ms="2685" status="PASS">
+        <test-method is-config="true" signature="launchApp()[pri:0, instance:FrameworkDesign.Tests.FunctionalTest@18078bef]" started-at="2024-11-24T20:15:58 IST" name="launchApp" finished-at="2024-11-24T20:16:05 IST" duration-ms="7435" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApp -->
-        <test-method signature="endToEndTest(java.lang.String,java.lang.String)[pri:0, instance:FrameworkDesign.Tests.FunctionalTest@2f9f7dcf]" started-at="2024-11-24T12:51:01 IST" name="endToEndTest" data-provider="data" finished-at="2024-11-24T12:51:14 IST" duration-ms="13734" status="PASS">
+        <test-method signature="endToEndTest(java.util.HashMap)[pri:0, instance:FrameworkDesign.Tests.FunctionalTest@18078bef]" started-at="2024-11-24T20:16:05 IST" name="endToEndTest" data-provider="data" finished-at="2024-11-24T20:16:20 IST" duration-ms="14311" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[r1@abc.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Test@1234]]>
+                <![CDATA[{userPassword=Test@1234, userEmail=r1@abc.com, userPurchase=adidas}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endToEndTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:FrameworkDesign.Tests.FunctionalTest@2f9f7dcf]" started-at="2024-11-24T12:51:14 IST" name="tearDown" finished-at="2024-11-24T12:51:15 IST" duration-ms="157" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:FrameworkDesign.Tests.FunctionalTest@18078bef]" started-at="2024-11-24T20:16:20 IST" name="tearDown" finished-at="2024-11-24T20:16:20 IST" duration-ms="323" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="launchApp()[pri:0, instance:FrameworkDesign.Tests.FunctionalTest@2f9f7dcf]" started-at="2024-11-24T12:51:15 IST" name="launchApp" finished-at="2024-11-24T12:51:17 IST" duration-ms="1998" status="PASS">
+        <test-method is-config="true" signature="launchApp()[pri:0, instance:FrameworkDesign.Tests.FunctionalTest@18078bef]" started-at="2024-11-24T20:16:20 IST" name="launchApp" finished-at="2024-11-24T20:16:25 IST" duration-ms="4478" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApp -->
-        <test-method signature="endToEndTest(java.lang.String,java.lang.String)[pri:0, instance:FrameworkDesign.Tests.FunctionalTest@2f9f7dcf]" started-at="2024-11-24T12:51:17 IST" name="endToEndTest" data-provider="data" finished-at="2024-11-24T12:51:30 IST" duration-ms="13019" status="PASS">
+        <test-method signature="endToEndTest(java.util.HashMap)[pri:0, instance:FrameworkDesign.Tests.FunctionalTest@18078bef]" started-at="2024-11-24T20:16:25 IST" name="endToEndTest" data-provider="data" finished-at="2024-11-24T20:16:39 IST" duration-ms="14052" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[shetty@gmail.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Iamking@000]]>
+                <![CDATA[{userPassword=Iamking@000, userEmail=shetty@gmail.com, userPurchase=iphone}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endToEndTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:FrameworkDesign.Tests.FunctionalTest@2f9f7dcf]" started-at="2024-11-24T12:51:30 IST" name="tearDown" finished-at="2024-11-24T12:51:30 IST" duration-ms="176" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:FrameworkDesign.Tests.FunctionalTest@18078bef]" started-at="2024-11-24T20:16:39 IST" name="tearDown" finished-at="2024-11-24T20:16:39 IST" duration-ms="306" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="launchApp()[pri:0, instance:FrameworkDesign.Tests.FunctionalTest@2f9f7dcf]" started-at="2024-11-24T12:51:30 IST" name="launchApp" finished-at="2024-11-24T12:51:32 IST" duration-ms="1997" status="PASS">
+        <test-method is-config="true" signature="launchApp()[pri:0, instance:FrameworkDesign.Tests.FunctionalTest@18078bef]" started-at="2024-11-24T20:16:39 IST" name="launchApp" finished-at="2024-11-24T20:16:42 IST" duration-ms="3003" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApp -->
-        <test-method signature="findProductTest(java.lang.String,java.lang.String)[pri:0, instance:FrameworkDesign.Tests.FunctionalTest@2f9f7dcf]" started-at="2024-11-24T12:51:32 IST" name="findProductTest" data-provider="data" finished-at="2024-11-24T12:51:32 IST" depends-on-methods="FrameworkDesign.Tests.FunctionalTest.endToEndTest" duration-ms="589" status="PASS">
+        <test-method signature="findProductTest(java.util.HashMap)[pri:0, instance:FrameworkDesign.Tests.FunctionalTest@18078bef]" started-at="2024-11-24T20:16:42 IST" name="findProductTest" data-provider="data" finished-at="2024-11-24T20:16:44 IST" depends-on-methods="FrameworkDesign.Tests.FunctionalTest.endToEndTest" duration-ms="2040" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[r1@abc.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Test@1234]]>
+                <![CDATA[{userPassword=Test@1234, userEmail=r1@abc.com, userPurchase=adidas}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- findProductTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:FrameworkDesign.Tests.FunctionalTest@2f9f7dcf]" started-at="2024-11-24T12:51:32 IST" name="tearDown" finished-at="2024-11-24T12:51:33 IST" duration-ms="143" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:FrameworkDesign.Tests.FunctionalTest@18078bef]" started-at="2024-11-24T20:16:44 IST" name="tearDown" finished-at="2024-11-24T20:16:44 IST" duration-ms="171" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="launchApp()[pri:0, instance:FrameworkDesign.Tests.FunctionalTest@2f9f7dcf]" started-at="2024-11-24T12:51:33 IST" name="launchApp" finished-at="2024-11-24T12:51:35 IST" duration-ms="2142" status="PASS">
+        <test-method is-config="true" signature="launchApp()[pri:0, instance:FrameworkDesign.Tests.FunctionalTest@18078bef]" started-at="2024-11-24T20:16:44 IST" name="launchApp" finished-at="2024-11-24T20:16:49 IST" duration-ms="4841" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApp -->
-        <test-method signature="findProductTest(java.lang.String,java.lang.String)[pri:0, instance:FrameworkDesign.Tests.FunctionalTest@2f9f7dcf]" started-at="2024-11-24T12:51:35 IST" name="findProductTest" data-provider="data" finished-at="2024-11-24T12:51:35 IST" depends-on-methods="FrameworkDesign.Tests.FunctionalTest.endToEndTest" duration-ms="634" status="PASS">
+        <test-method signature="findProductTest(java.util.HashMap)[pri:0, instance:FrameworkDesign.Tests.FunctionalTest@18078bef]" started-at="2024-11-24T20:16:49 IST" name="findProductTest" data-provider="data" finished-at="2024-11-24T20:16:51 IST" depends-on-methods="FrameworkDesign.Tests.FunctionalTest.endToEndTest" duration-ms="2249" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[shetty@gmail.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Iamking@000]]>
+                <![CDATA[{userPassword=Iamking@000, userEmail=shetty@gmail.com, userPurchase=iphone}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- findProductTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:FrameworkDesign.Tests.FunctionalTest@2f9f7dcf]" started-at="2024-11-24T12:51:35 IST" name="tearDown" finished-at="2024-11-24T12:51:35 IST" duration-ms="122" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:FrameworkDesign.Tests.FunctionalTest@18078bef]" started-at="2024-11-24T20:16:51 IST" name="tearDown" finished-at="2024-11-24T20:16:51 IST" duration-ms="179" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

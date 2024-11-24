@@ -3,6 +3,7 @@ package FrameworkDesign.Tests;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
@@ -62,20 +63,33 @@ public class FunctionalTest extends BaseTest{
 		
 		
 		@DataProvider(name="data") 
-		public Object[][] getData() {
+		public Object[][] getData() throws IOException {
+
+			List<HashMap<String,String>> data = getJsonDatatoMap(System.getProperty("user.dir")+"//src//test//java//FrameworkDesign//FunctionalTestData//FunctionalTestData.json");
 			
-			HashMap<String, String> hashMap1 = new HashMap<>();
+			Object[][] result = new Object[data.size()][1];
 			
-			hashMap1.put("userEmail","r1@abc.com");
-			hashMap1.put("userPassword","Test@1234");
-			hashMap1.put("userPurchase","adidas");
+			for (int i=0; i<data.size(); i++) {
+				result[i][0] = data.get(i);
+			}
 			
-			HashMap<String, String> hashMap2 = new HashMap<>();
-			
-			hashMap2.put("userEmail","shetty@gmail.com");
-			hashMap2.put("userPassword","Iamking@000");
-			hashMap2.put("userPurchase","iphone");
-			
-			return new Object[][] {{hashMap1},{hashMap2}};
+			return result;
 		}
+		
+//		Method 1 :-
+//		HashMap<String, String> hashMap1 = new HashMap<>();
+//		
+//		hashMap1.put("userEmail","r1@abc.com");
+//		hashMap1.put("userPassword","Test@1234");
+//		hashMap1.put("userPurchase","adidas");
+//		
+//		HashMap<String, String> hashMap2 = new HashMap<>();
+//		
+//		hashMap2.put("userEmail","shetty@gmail.com");
+//		hashMap2.put("userPassword","Iamking@000");
+//		hashMap2.put("userPurchase","iphone");
+		
+//		return new Object[][] {{hashMap1},{hashMap2}};
+		
+//		Method 2 :-
 }
