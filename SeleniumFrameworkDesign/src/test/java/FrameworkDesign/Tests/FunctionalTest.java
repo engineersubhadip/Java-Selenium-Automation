@@ -16,10 +16,10 @@ import FrameworkDesign.TestComponent.BaseTest;
 public class FunctionalTest extends BaseTest{
 
 
-		String userPurchase = "adidas";
+//		String userPurchase = "iphone";
 		
 		@Test(dataProvider="data")
-		public void endToEndTest(String userEmail, String userPassword) throws IOException, InterruptedException {
+		public void endToEndTest(String userEmail, String userPassword, String userPurchase) throws IOException, InterruptedException {
 			
 //			Login Page :-
 			
@@ -48,7 +48,7 @@ public class FunctionalTest extends BaseTest{
 		}
 
 		@Test(dependsOnMethods= {"endToEndTest"}, dataProvider="data")
-		public void findProductTest(String userEmail, String userPassword) throws InterruptedException {
+		public void findProductTest(String userEmail, String userPassword, String userPurchase) throws InterruptedException {
 			
 //			Login Page :-
 			
@@ -64,6 +64,6 @@ public class FunctionalTest extends BaseTest{
 		
 		@DataProvider(name="data") 
 		public Object[][] getData() {
-			return new Object[][] {{"r1@abc.com","Test@1234"},{"shetty@gmail.com","Iamking@000"}};
+			return new Object[][] {{"r1@abc.com","Test@1234","adidas"},{"shetty@gmail.com","Iamking@000","iphone"}};
 		}
 }
