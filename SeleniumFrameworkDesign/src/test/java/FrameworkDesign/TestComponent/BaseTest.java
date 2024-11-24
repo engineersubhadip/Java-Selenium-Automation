@@ -42,13 +42,11 @@ public class BaseTest {
 	}
 	
 	@BeforeMethod
-	public  LandingPage launchApp() throws IOException {
+	public  void launchApp() throws IOException {
 		
 		initializeDriver();
 		loginPage = new LandingPage(driver);
 		loginPage.goTo();
-		
-		return loginPage;
 	}
 	
 	@AfterMethod

@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 
 import org.testng.Assert;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import FrameworkDesign.PageObjects.BillingPage;
@@ -14,12 +15,11 @@ import FrameworkDesign.TestComponent.BaseTest;
 
 public class FunctionalTest extends BaseTest{
 
-		String userEmail = "r1@abc.com";
-		String userPassword = "Test@1234";
+
 		String userPurchase = "adidas";
 		
-		@Test
-		public void endToEndTest() throws IOException, InterruptedException {
+		@Test(dataProvider="data")
+		public void endToEndTest(String userEmail, String userPassword) throws IOException, InterruptedException {
 			
 //			Login Page :-
 			
@@ -47,8 +47,8 @@ public class FunctionalTest extends BaseTest{
 			Assert.assertEquals(billingpage.getConfirmMessage(), "Thankyou for the order.".toLowerCase());
 		}
 
-		@Test(dependsOnMethods= {"endToEndTest"})
-		public void findProductTest() throws InterruptedException {
+		@Test(dependsOnMethods= {"endToEndTest"}, dataProvider="data")
+		public void findProductTest(String userEmail, String userPassword) throws InterruptedException {
 			
 //			Login Page :-
 			
@@ -60,5 +60,10 @@ public class FunctionalTest extends BaseTest{
 			
 			Assert.assertTrue(orderspage.checkProduct(userPurchase));
 		}
-	
+		
+		
+		@DataProvider(name="data") 
+		public Object[][] getData() {
+			return new Object[][] {{"r1@abc.com","Test@1234"},{"shetty@gmail.com","Iamking@000"}};
+		}
 }
