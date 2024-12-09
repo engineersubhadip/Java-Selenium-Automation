@@ -17,8 +17,8 @@ public class ReadingPropertiesFile {
 		properties.load(file);
 		
 //		4. Reading data from Property file :-
-		System.out.println(properties.get("password"));
-		System.out.println(properties.get("orderid"));
+		System.out.println(properties.getProperty("password"));
+		System.out.println(properties.getProperty("orderid"));
 	}
 
 }
