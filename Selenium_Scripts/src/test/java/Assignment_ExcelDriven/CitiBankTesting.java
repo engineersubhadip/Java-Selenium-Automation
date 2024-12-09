@@ -12,6 +12,8 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -21,13 +23,14 @@ import ExcelUtils.AssignmentUtility;
 public class CitiBankTesting {
 
 	public static void main(String[] args) throws IOException, InterruptedException {
+		
 //		A. Loading the Driver configurations from the Properties File :-
 		
 //		1. Create a Properties object :-
 		Properties properties = new Properties();
 		
 //		2. Open the Properties file in reading mode :-
-		FileInputStream file = new FileInputStream("K:\\Selenium Java Automation\\Selenium_Scripts\\src\\test\\java\\testdata\\assignmentConfig.properties");
+		FileInputStream file = new FileInputStream(System.getProperty("user.dir")+"\\src\\test\\java\\testdata\\assignmentConfig.properties");
 		
 //		3. Load the Properties file :-
 		properties.load(file);
@@ -37,7 +40,18 @@ public class CitiBankTesting {
 
 //		B. Initialize our driver : -
 		
-		WebDriver driver = new ChromeDriver();
+		WebDriver driver;
+		
+		if (properties.getProperty("browser").equalsIgnoreCase("Chrome")) {
+			driver = new ChromeDriver();
+		}else if (properties.getProperty("browser").equalsIgnoreCase("Edge")) {
+			driver = new EdgeDriver();
+		}else if (properties.getProperty("browser").equalsIgnoreCase("Firefox")) {
+			driver = new FirefoxDriver();
+		}else {
+			return;
+		}
+		
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
@@ -47,7 +61,8 @@ public class CitiBankTesting {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 		driver.get(url); // App is launched
 		
-		Thread.sleep(2000);
+		wait.until(ExpectedConditions.titleContains("CD Calculator | Certificate of Deposit Calculator | CIT Bank"));
+		
 		JavascriptExecutor js = (JavascriptExecutor)driver;
 		
 //		C. Locators/WebElements of the targeted fields :-
@@ -79,20 +94,16 @@ public class CitiBankTesting {
 			
 //			Insert all the captured data to the Application
 			
-			Thread.sleep(500);
 			initialDeposit.clear();
 			initialDeposit.sendKeys(initialDepositAmount);
 			
-			Thread.sleep(500);
 			lengthMonth.clear();
 			lengthMonth.sendKeys(lengthCount);
 			
 			
-			Thread.sleep(500);
 			interestRate.clear();
 			interestRate.sendKeys(interestRateAmount);
 			
-			Thread.sleep(500);
 			js.executeScript("arguments[0].click();",dropDown);
 			
 			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//mat-option[contains(@class,'mat-option mat-focus-indicator')] //span")));
@@ -103,7 +114,6 @@ public class CitiBankTesting {
 
 			a.moveToElement(tarWebElement).click().build().perform();
 			
-			Thread.sleep(2000);
 			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[@id='CIT-chart-submit']")));
 			WebElement submitBtn = driver.findElement(By.xpath("//button[@id='CIT-chart-submit']"));
 			
