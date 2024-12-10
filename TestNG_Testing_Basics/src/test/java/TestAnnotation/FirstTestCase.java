@@ -11,17 +11,17 @@ import org.testng.annotations.Test;
 
 public class FirstTestCase {
 	
-	@Test
+	@Test(priority=1)
 	public void openApp() {
 		System.out.println("Opening the App...");
 	}
 	
-	@Test
+	@Test(priority=2)
 	public void loginApp() {
 		System.out.println("Logging into the App...");
 	}
 	
-	@Test
+	@Test(priority=3)
 	public void logoutApp() {
 		System.out.println("Logging out from the App...");
 	}
