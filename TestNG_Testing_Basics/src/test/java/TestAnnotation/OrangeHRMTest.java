@@ -48,7 +48,7 @@ public class OrangeHRMTest {
 	}
 
 	@Test(priority = 4)
-	void closeApp() {
+	void closeApp() throws InterruptedException {
 		wait.until(ExpectedConditions
 				.visibilityOfElementLocated(By.xpath("//i[contains(@class,'oxd-icon bi-caret-down')]")));
 		driver.findElement(By.xpath("//i[contains(@class,'oxd-icon bi-caret-down')]")).click();
@@ -56,5 +56,8 @@ public class OrangeHRMTest {
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[contains(@href,'logout')]")));
 
 		driver.findElement(By.xpath("//a[contains(@href,'logout')]")).click();
+		
+		Thread.sleep(2000);
+		driver.quit();
 	}
 }
