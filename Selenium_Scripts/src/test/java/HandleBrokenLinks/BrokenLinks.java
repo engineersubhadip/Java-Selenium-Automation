@@ -12,6 +12,8 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 /*
  * If we send a request to the server
  * Based on the response code sent by the server, we will judge if it is a broken link or not
+ * Status Code >= 400 :- Broken Link
+ * Else :- Working Link
  */
 
 public class BrokenLinks {
