@@ -63,15 +63,22 @@ public class AssignmentUtility {
 	}
 	
 	public static void setCellData(String filePath, String sheetName, int rowNum, int cellNum, String userData) throws IOException {
-		file2 = new FileOutputStream(filePath);
-		workbook = new XSSFWorkbook();
-		sheet = workbook.getSheet(sheetName);
+//		Reading Part :-
 		
+		file1 = new FileInputStream(filePath);
+		workbook = new XSSFWorkbook(file1);
+		sheet = workbook.getSheet(sheetName);
 		row = sheet.getRow(rowNum);
-		row.createCell(cellNum).setCellValue(userData);
+		
+//		Writing Part :-
+		cell = row.createCell(cellNum);
+		cell.setCellValue(userData);
+		
+		file2 = new FileOutputStream(filePath);
 		workbook.write(file2);
 		
 		workbook.close();
 		file2.close();
+		file1.close();
 	}
 }
