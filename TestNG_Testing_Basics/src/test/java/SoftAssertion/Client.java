@@ -17,6 +17,6 @@ public class Client {
 		System.out.println(3);
 		System.out.println(4);
 		
-		sf.assertAll();
+		sf.assertAll(); // mandatory 
 	}
 }
