@@ -5,10 +5,10 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 /*
- * 1. Login
- * 2. Search
- * 3. Adv. Search
- * 4. Logout
+ * 1. Login -> @BeforeClass
+ * 2. Search -> @Test
+ * 3. Adv. Search -> @Test
+ * 4. Logout -> @AfterClass
  */
 
 public class BeforeAfterClass {
