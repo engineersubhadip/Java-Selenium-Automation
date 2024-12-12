@@ -19,18 +19,19 @@ public class FullPage {
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-		
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));	
+
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 		driver.get("https://demo.nopcommerce.com/");
-		
+
 		wait.until(ExpectedConditions.titleContains("nopCommerce demo store"));
-		
-		File src =  ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-		
+
+		File src = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE); // For taking multiple SS, we need to
+																				// re-write the step multiple times
+
 		FileUtils.copyFile(src, new File("K:\\AutomationScreenShots\\fullPage.png"));
-		
+
 		Thread.sleep(2000);
-		
+
 		driver.quit();
 	}
 
