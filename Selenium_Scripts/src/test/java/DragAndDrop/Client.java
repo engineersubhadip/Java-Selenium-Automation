@@ -35,6 +35,8 @@ public class Client {
 		
 		a.dragAndDrop(source, target).build().perform();
 		
+		Thread.sleep(1000);
+		
 		driver.quit();
 	}
 
