@@ -11,8 +11,8 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 /*
- * For Horizontal Slider, increase/decrease X-axis
- * For vertical Slider, increase/decrease Y-axis
+ * For Horizontal Slider, increase/decrease X-axis; Y-axis will be const
+ * For vertical Slider, increase/decrease Y-axis; X-axis will be const
  */
 
 
