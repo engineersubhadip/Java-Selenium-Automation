@@ -1,5 +1,11 @@
 package NewTab;
 
+/*
+ * The parent window handle is the one which you get, when we first do driver.get().
+ * Lets say even if we open new tabs using .switchTo() and then capture the window handles {The driver focus will be here due to switchTo()}
+ * The parent window {index->0} is still at the one which we got when we first did driver.get().
+ */
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WindowType;
 import org.openqa.selenium.chrome.ChromeDriver;
