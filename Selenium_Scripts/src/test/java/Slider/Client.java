@@ -46,9 +46,9 @@ public class Client {
 		
 		Actions a = new Actions(driver);
 		
-		a.dragAndDropBy(leftSlider, 100, leftY).build().perform();
+		a.dragAndDropBy(leftSlider, 100, leftY).build().perform(); // 100 denotes how much I want to increase leftX by, leftY is const
 		
-		a.dragAndDropBy(rightSlider, -200, rightY).build().perform();
+		a.dragAndDropBy(rightSlider, -200, rightY).build().perform(); // -200 denotes how much I want to decrease rightX by, rightY is const
 		
 		System.out.println(leftSlider.getLocation().getX());
 		
