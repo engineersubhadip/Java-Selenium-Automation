@@ -1,7 +1,8 @@
 package KeyboardActions;
 
 import java.time.Duration;
-import java.util.Set;
+import java.util.ArrayList;
+import java.util.List;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
@@ -29,8 +30,6 @@ public class Client2 {
 
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 
-		String currWindow = driver.getWindowHandle();
-
 		wait.until(ExpectedConditions.titleContains("nopCommerce demo store"));
 
 		WebElement regLink = driver.findElement(By.xpath("//a[contains(@href,'register')]"));
@@ -38,18 +37,16 @@ public class Client2 {
 		Actions a = new Actions(driver);
 
 		a.moveToElement(regLink).keyDown(Keys.CONTROL).click().keyUp(Keys.CONTROL).build().perform();
+		
+//		Best way to handle :- Switching between windows:-
+		
+		List<String> windowHandles = new ArrayList (driver.getWindowHandles());
 
-		Set<String> windowHandles = driver.getWindowHandles();
+		String parentWindow = windowHandles.get(0); // Index 0 will always give parent window
+		
+		String childWindow = windowHandles.get(1); // from 1 onwards we have child windows
 
-		String tarWindow = windowHandles.stream().filter(currEle -> {
-			if (currEle.equals(currWindow)) {
-				return false;
-			} else {
-				return true;
-			}
-		}).toList().get(0);
-
-		driver.switchTo().window(tarWindow);
+		driver.switchTo().window(childWindow);
 
 		wait.until(ExpectedConditions.titleContains("nopCommerce demo store. Register"));
 
@@ -59,7 +56,7 @@ public class Client2 {
 		
 		driver.close();
 
-		driver.switchTo().window(currWindow);
+		driver.switchTo().window(parentWindow);
 
 		a.moveToElement(driver.findElement(By.xpath("//div[@class='header-logo']"))).contextClick().build().perform();
 		
