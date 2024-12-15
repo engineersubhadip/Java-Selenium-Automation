@@ -16,7 +16,7 @@ public class Client {
 		
 //		2. Hit the new URL :-
 		
-		driver.get("https://www.amazon.com/");
+		driver.get("https://www.amazon.com/"); // currently the driver is focused here
 	}
 
 }
