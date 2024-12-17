@@ -5,6 +5,8 @@ import org.testng.annotations.Test;
 
 /*
  * To use beforeTest and AfterTest we  need to have 2 Classes at least
+ * Before Test will be executed before execution of any of the Test Cases in a test module
+ * After Test will be executed after execution of all of the Test Cases in a test module
  */
 
 public class C1 {
