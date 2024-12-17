@@ -3,6 +3,10 @@ package BeforeAfterTestAnnotation;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
+/*
+ * To use beforeTest and AfterTest we  need to have 2 Classes at least
+ */
+
 public class C1 {
 	@Test
 	public void abc() {
