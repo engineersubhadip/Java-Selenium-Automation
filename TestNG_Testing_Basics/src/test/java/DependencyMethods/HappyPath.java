@@ -10,6 +10,8 @@ import org.testng.annotations.Test;
  * 3. Search
  * 4. Adv Search
  * 5. Logout
+ * 3,4,5 is dependent on 2
+ * and 2 is dependent on 1
  * 
  * dependsOnMethods -> Only works for @Test annotation. Meaning one @Test will be dependent on another @Test
  * If one @Test fails/skips, then all the dependent Methods will also be skipped
