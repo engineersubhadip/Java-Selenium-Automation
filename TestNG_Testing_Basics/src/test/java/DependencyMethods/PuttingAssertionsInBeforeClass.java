@@ -1,11 +1,13 @@
 package DependencyMethods;
 
 import org.testng.Assert;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 /*
 1. If we put Assertions in the BeforeClass, and it fails. Then all the @Test will be skipped.
+Along with @AfterClass
  */
 
 public class PuttingAssertionsInBeforeClass {
@@ -16,6 +18,12 @@ public class PuttingAssertionsInBeforeClass {
 		Assert.assertTrue(false);
 		System.out.println("After opening");
 	}
+	
+	@AfterClass
+	public void tearDown() {
+		System.out.println("Closing the Browser");
+	}
+	
 	
 	@Test(priority=1)
 	public void login() {
