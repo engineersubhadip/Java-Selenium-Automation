@@ -13,6 +13,8 @@ import org.testng.annotations.Test;
  * 
  * dependsOnMethods -> Only works for @Test annotation. Meaning one @Test will be dependent on another @Test
  * If one @Test fails/skips, then all the dependent Methods will also be skipped
+ * 
+ * Without dependenyMethods, if one @Test fails, then the other @Test will still be executed
  */
 
 public class HappyPath {
