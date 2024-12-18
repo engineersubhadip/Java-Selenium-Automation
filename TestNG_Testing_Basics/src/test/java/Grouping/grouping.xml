@@ -7,8 +7,8 @@
   
   	<groups>
   		<run>
-	  		<include name="sanity"/>
-	  		<exclude name="regression"/>
+	  		<include name="regression"/>
+	  		<exclude name="sanity"/>
 	  	</run>
   	</groups>
   	
