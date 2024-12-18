@@ -3,7 +3,7 @@ package Grouping;
 import org.testng.annotations.Test;
 
 /*
- If a test case belongs to multiple categories provide a separate name for that
+ If a test case belongs to multiple categories provide a separate name for that along with the other names
  */
 
 public class PaymentTests {
