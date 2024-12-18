@@ -2,6 +2,10 @@ package Grouping;
 
 import org.testng.annotations.Test;
 
+/*
+ If a test case belongs to multiple categories provide a separate name for that
+ */
+
 public class PaymentTests {
 	
 	@Test(priority=1, groups= {"functional"})
