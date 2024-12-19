@@ -62,7 +62,7 @@ public class DataProviderDemo {
 	}
 
 	@DataProvider(name="dp")
-	public Object[][] testData() {
+	Object[][] testData() {
 		Object[][] data = { { "Test@abc.com", "123" }, { "subhadip911@gmail.com", "password" }, { "subhadip", "pass" },
 				{ "subhadip911@gmail.com", "Test@123" }, { "pavan", "123" } };
 		return data;
