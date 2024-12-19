@@ -28,7 +28,7 @@ public class DataProviderDemo {
 		wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 	}
 
-	@Test(dataProvider="dp")
+	@Test(dataProvider = "dp")
 	public void testLogin(String userName, String password) throws InterruptedException {
 
 		driver.get("https://tutorialsninja.com/demo/index.php?route=account/login");
@@ -37,7 +37,7 @@ public class DataProviderDemo {
 
 		driver.findElement(By.xpath("//input[@id='input-email']")).sendKeys(userName);
 		driver.findElement(By.xpath("//input[@id='input-password']")).sendKeys(password);
-		
+
 		driver.findElement(By.xpath("//input[@value='Login']")).click();
 
 		Thread.sleep(2000);
@@ -46,14 +46,12 @@ public class DataProviderDemo {
 			driver.findElement(By.xpath("(//div[@id='content']/h2)[1]")).isDisplayed();
 			Assert.assertTrue(true);
 			driver.findElement(By.xpath("//a[@title='My Account']")).click();
-			Thread.sleep(500);
-			driver.findElement(
-					By.xpath("//ul[@class='dropdown-menu dropdown-menu-right'] //li/a[contains(@href,'logout')]"))
-					.click();
+			Thread.sleep(500); 
+			driver.findElement( By.xpath("//ul[@class='dropdown-menu dropdown-menu-right'] //li/a[contains(@href,'logout')]")) .click();
 		} catch (Exception e) {
 			Assert.fail();
 		}
-		
+
 	}
 
 	@AfterClass
@@ -61,7 +59,7 @@ public class DataProviderDemo {
 		driver.quit();
 	}
 
-	@DataProvider(name="dp")
+	@DataProvider(name = "dp", indices = { 3, 2, 1, 4 })
 	Object[][] testData() {
 		Object[][] data = { { "Test@abc.com", "123" }, { "subhadip911@gmail.com", "password" }, { "subhadip", "pass" },
 				{ "subhadip911@gmail.com", "Test@123" }, { "pavan", "123" } };
