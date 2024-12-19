@@ -1,0 +1,8 @@
+1. We want to test a Login Feature to be run on multiple test data.
+{We want to fetch the test data from a certain Excel File}
+
+2. We want to test this feature on Chrome and Edge Browsers
+A. Sequentially 
+B. At the same time
+
+Follow the best practices

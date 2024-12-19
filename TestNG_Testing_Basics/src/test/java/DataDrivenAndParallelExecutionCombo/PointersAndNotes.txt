@@ -1,0 +1,12 @@
+1. Parameterization :- Sending data to the @test methods during run-time.
+
+It is achieved in 2 ways :-
+
+A. @DataProvider  B. Using XML File (Parallel Testing)
+
+@DataProvider :-
+1. It is used for Data Driven Testing.
+2. The purpose of this annotation, is to create test data and send that data to various @Test methods.
+3. Using this annotation, we can execute a test case on multiple sets of data.
+
+Using XML File :-
