@@ -20,9 +20,11 @@ public class AccountRegistrationPage extends BasePage{
 	@FindBy(xpath="//input[@value='0']") WebElement subscribeNo;
 	@FindBy(xpath="//input[@name='agree']") WebElement privacyAgree;
 	@FindBy(xpath="//input[@value='Continue']") WebElement continueButton;
+	@FindBy(xpath="//h1[normalize-space()='Your Account Has Been Created!']") WebElement msgConfirmation;
 	
-	public void enterFirstName(String userName) {
-		this.firstName.sendKeys(userName);
+	
+	public void enterFirstName(String firstName) {
+		this.firstName.sendKeys(firstName);
 	}
 	
 	public void enterLastName(String lastName) {
@@ -60,4 +62,9 @@ public class AccountRegistrationPage extends BasePage{
 	public void clickContinue() {
 		this.continueButton.click();
 	}
+	
+	public boolean validateConfirmationMessage() {
+		return msgConfirmation.isDisplayed();
+	}
+
 }
