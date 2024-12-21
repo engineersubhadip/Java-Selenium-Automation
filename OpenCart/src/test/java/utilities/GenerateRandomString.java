@@ -25,4 +25,9 @@ public class GenerateRandomString {
 		
 		return result;
 	}
+
+	public static String getAlphanumeric() {
+		String result = getString() + getNumberString();
+		return result;
+	}
 }
