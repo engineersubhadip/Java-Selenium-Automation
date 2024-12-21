@@ -50,15 +50,15 @@ public class AccountRegistrationPage extends BasePage{
 		this.txtConfirmPassword.sendKeys(userPassword);
 	}
 	
-	public void subscriptionAgree() {
+	public void clickSubscriptionAgree() {
 		this.radSubscribeYes.click();
 	}
 	
-	public void subscriptionNo() {
+	public void clickSubscriptionNo() {
 		this.radSubscribeNo.click();
 	}
 	
-	public void privacyAgree() {
+	public void clickPrivacyAgree() {
 		this.chkPrivacyAgree.click();
 	}
 	
