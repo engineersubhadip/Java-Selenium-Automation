@@ -11,26 +11,8 @@ import org.testng.annotations.Test;
 
 import pageObjects.AccountRegistrationPage;
 import pageObjects.HomePage;
-import utilities.GenerateRandomString;
 
-public class TC001_AccountRegistrationTest {
-	
-	public WebDriver driver;
-	
-	@BeforeClass
-	public void setUp() {
-		driver = new ChromeDriver();
-		driver.manage().deleteAllCookies();
-		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-		
-		driver.get("https://tutorialsninja.com/demo/");
-	}
-	
-	@AfterClass
-	public void tearDown() {
-		driver.quit();
-	}
+public class TC001_AccountRegistrationTest extends BaseTest{
 	
 	@Test
 	public void verfiy_account_registration() throws InterruptedException { // This test-case is referring to 2 page object classes.
@@ -46,19 +28,19 @@ public class TC001_AccountRegistrationTest {
 		
 		regPage.waitForTitleToLoad("Register Account");
 		
-		String firstName = GenerateRandomString.getString();
+		String firstName = getRandomString();
 		regPage.enterFirstName(firstName);
 		
-		String lastName = GenerateRandomString.getString();
+		String lastName = getRandomString();
 		regPage.enterLastName(lastName);
 		
-		String userEmail = GenerateRandomString.getString();
+		String userEmail = getRandomString();
 		regPage.enterEmail(userEmail+"@gmail.com");
 		
-		String userTelephoneNumber = GenerateRandomString.getNumberString();
+		String userTelephoneNumber = getRandomNumberString();
 		regPage.enterTelephoneNumber(userTelephoneNumber);
 		
-		String userPassword = GenerateRandomString.getString();
+		String userPassword = getRandomAlphanumeric();
 		regPage.enterUserPassword(userPassword);
 		regPage.enterConfirmPassword(userPassword);
 		
