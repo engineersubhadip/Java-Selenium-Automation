@@ -25,6 +25,9 @@ public class AccountRegistrationPage extends BasePage{
 	By msgConfirmationLoc = By.xpath("//h1[normalize-space()='Your Account Has Been Created!']");
 	@FindBy(xpath="//h1[normalize-space()='Your Account Has Been Created!']") WebElement msgConfirmation;
 	
+	By passwordMismatchLoc = By.xpath("//div[contains(text(),'Password confirmation does not match password!')]");
+	@FindBy(xpath="//div[contains(text(),'Password confirmation does not match password!')]")
+	WebElement passwordMismatch;
 	
 	public void enterFirstName(String firstName) throws InterruptedException {
 		Thread.sleep(200);
@@ -70,6 +73,15 @@ public class AccountRegistrationPage extends BasePage{
 	
 	public void clickContinue() {
 		this.btnContinueButton.click();
+	}
+	
+	public String validateIncorrectPasswordMessage() {
+		try {
+			waitForElementToAppear(passwordMismatchLoc);
+			return passwordMismatch.getText();
+		}catch(Exception e) {
+			return e.getMessage();
+		}
 	}
 	
 	public String validateConfirmationMessage() {
