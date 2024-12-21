@@ -66,9 +66,13 @@ public class AccountRegistrationPage extends BasePage{
 		this.btnContinueButton.click();
 	}
 	
-	public boolean validateConfirmationMessage() {
-		waitForElementToAppear(msgConfirmationLoc);
-		return msgConfirmation.isDisplayed();
+	public String validateConfirmationMessage() {
+		try {
+			waitForElementToAppear(msgConfirmationLoc);
+			return msgConfirmation.getText();			
+		}catch(Exception e) {
+			return e.getMessage();
+		}
 	}
 
 }
