@@ -11,6 +11,7 @@ import org.testng.annotations.Test;
 
 import pageObjects.AccountRegistrationPage;
 import pageObjects.HomePage;
+import utilities.GenerateRandomString;
 
 public class TC001_AccountRegistrationTest {
 	
@@ -32,7 +33,7 @@ public class TC001_AccountRegistrationTest {
 	}
 	
 	@Test
-	public void verfiy_account_registration() { // This test-case is referring to 2 page object classes.
+	public void verfiy_account_registration() throws InterruptedException { // This test-case is referring to 2 page object classes.
 		
 		HomePage homePage = new HomePage(driver);
 		homePage.waitForTitleToLoad("Your Store");
@@ -44,14 +45,27 @@ public class TC001_AccountRegistrationTest {
 		AccountRegistrationPage regPage = new AccountRegistrationPage(driver);
 		
 		regPage.waitForTitleToLoad("Register Account");
-		regPage.enterFirstName("Subhadip");
-		regPage.enterLastName("Das");
-		regPage.enterEmail("subhadip46@gmail.com");
-		regPage.enterTelephoneNumber("212885632");
-		regPage.enterUserPassword("test1234");
-		regPage.enterConfirmPassword("test1234");
+		
+		String firstName = GenerateRandomString.getString();
+		regPage.enterFirstName(firstName);
+		
+		String lastName = GenerateRandomString.getString();
+		regPage.enterLastName(lastName);
+		
+		String userEmail = GenerateRandomString.getString();
+		regPage.enterEmail(userEmail+"@gmail.com");
+		
+		String userTelephoneNumber = GenerateRandomString.getNumberString();
+		regPage.enterTelephoneNumber(userTelephoneNumber);
+		
+		String userPassword = GenerateRandomString.getString();
+		regPage.enterUserPassword(userPassword);
+		regPage.enterConfirmPassword(userPassword);
+		
 		regPage.clickSubscriptionAgree();
+		
 		regPage.clickPrivacyAgree();
+		
 		regPage.clickContinue();
 		
 //		Validation Part :-

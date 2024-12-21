@@ -26,27 +26,33 @@ public class AccountRegistrationPage extends BasePage{
 	@FindBy(xpath="//h1[normalize-space()='Your Account Has Been Created!']") WebElement msgConfirmation;
 	
 	
-	public void enterFirstName(String firstName) {
+	public void enterFirstName(String firstName) throws InterruptedException {
+		Thread.sleep(200);
 		this.txtFirstName.sendKeys(firstName);
 	}
 	
-	public void enterLastName(String lastName) {
+	public void enterLastName(String lastName) throws InterruptedException {
+		Thread.sleep(200);
 		this.txtLastName.sendKeys(lastName);
 	}
 	
-	public void enterEmail(String userEmail) {
+	public void enterEmail(String userEmail) throws InterruptedException {
+		Thread.sleep(200);
 		this.txtEmail.sendKeys(userEmail);
 	}
 	
-	public void enterTelephoneNumber(String userNumber) {
+	public void enterTelephoneNumber(String userNumber) throws InterruptedException {
+		Thread.sleep(200);
 		this.txtCellNum.sendKeys(userNumber);
 	}
 	
-	public void enterUserPassword(String userPassword) {
+	public void enterUserPassword(String userPassword) throws InterruptedException {
+		Thread.sleep(200);
 		this.txtPassword.sendKeys(userPassword);
 	}
 	
-	public void enterConfirmPassword(String userPassword) {
+	public void enterConfirmPassword(String userPassword) throws InterruptedException {
+		Thread.sleep(200);
 		this.txtConfirmPassword.sendKeys(userPassword);
 	}
 	
