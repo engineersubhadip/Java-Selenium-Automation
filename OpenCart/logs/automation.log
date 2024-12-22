@@ -1,21 +1,42 @@
-2024-12-22 12:44:09 INFO  TC001_AccountRegistrationTest:16 - **** Started TC001_AccountRegistrationTest execution ****
-2024-12-22 12:44:09 INFO  TC001_AccountRegistrationTest:23 - Inside the Home Page...
-2024-12-22 12:44:09 INFO  TC001_AccountRegistrationTest:26 - Clicked on My Account
-2024-12-22 12:44:10 INFO  TC001_AccountRegistrationTest:28 - Clicked on Register Link
-2024-12-22 12:44:10 INFO  TC001_AccountRegistrationTest:36 - Inside Registration Page
-2024-12-22 12:44:10 INFO  TC001_AccountRegistrationTest:37 - Entering all the Customer details...
-2024-12-22 12:44:13 INFO  TC001_AccountRegistrationTest:58 - Successfully entered all the details of the Customer...
-2024-12-22 12:44:14 INFO  TC001_AccountRegistrationTest:61 - Clicked on Continue button
-2024-12-22 12:44:14 INFO  TC001_AccountRegistrationTest:65 - About to start validation message
-2024-12-22 12:44:14 INFO  TC001_AccountRegistrationTest:71 - Validation Passed
-2024-12-22 12:44:14 INFO  TC001_AccountRegistrationTest:83 - **** Finished TC001_AccountRegistrationTest execution ****
-2024-12-22 12:44:18 INFO  TC002_AccountRegistrationDiffPasswordTest:15 - **** Starting TC002_AccountRegistrationDiffPasswordTest execution ****
-2024-12-22 12:44:18 INFO  TC002_AccountRegistrationDiffPasswordTest:20 - Inside Home Page.
-2024-12-22 12:44:18 INFO  TC002_AccountRegistrationDiffPasswordTest:22 - Clicked on My Account
-2024-12-22 12:44:19 INFO  TC002_AccountRegistrationDiffPasswordTest:24 - Clicked on Register Link
-2024-12-22 12:44:19 INFO  TC002_AccountRegistrationDiffPasswordTest:28 - Inside Registration Page
-2024-12-22 12:44:19 INFO  TC002_AccountRegistrationDiffPasswordTest:30 - Entering customer details....
-2024-12-22 12:44:22 INFO  TC002_AccountRegistrationDiffPasswordTest:54 - Entered all the details
-2024-12-22 12:44:22 INFO  TC002_AccountRegistrationDiffPasswordTest:58 - Starting password mismatch message verfication....
-2024-12-22 12:44:22 INFO  TC002_AccountRegistrationDiffPasswordTest:66 - Message verfication failed
-2024-12-22 12:44:22 ERROR TC002_AccountRegistrationDiffPasswordTest:67 - Error Logs
+2024-12-22 12:53:24 INFO  TC001_AccountRegistrationTest:16 - **** Started TC001_AccountRegistrationTest execution ****
+2024-12-22 12:53:24 INFO  TC001_AccountRegistrationTest:23 - Inside the Home Page...
+2024-12-22 12:53:24 INFO  TC001_AccountRegistrationTest:26 - Clicked on My Account
+2024-12-22 12:53:25 INFO  TC001_AccountRegistrationTest:28 - Clicked on Register Link
+2024-12-22 12:53:25 INFO  TC001_AccountRegistrationTest:36 - Inside Registration Page
+2024-12-22 12:53:25 INFO  TC001_AccountRegistrationTest:37 - Entering all the Customer details...
+2024-12-22 12:53:27 INFO  TC001_AccountRegistrationTest:58 - Successfully entered all the details of the Customer...
+2024-12-22 12:53:28 INFO  TC001_AccountRegistrationTest:61 - Clicked on Continue button
+2024-12-22 12:53:28 INFO  TC001_AccountRegistrationTest:65 - About to start validation message
+2024-12-22 12:53:28 INFO  TC001_AccountRegistrationTest:71 - Validation Passed
+2024-12-22 12:53:28 INFO  TC001_AccountRegistrationTest:83 - **** Finished TC001_AccountRegistrationTest execution ****
+2024-12-22 12:53:32 INFO  TC002_AccountRegistrationDiffPasswordTest:15 - **** Starting TC002_AccountRegistrationDiffPasswordTest execution ****
+2024-12-22 12:53:32 INFO  TC002_AccountRegistrationDiffPasswordTest:20 - Inside Home Page.
+2024-12-22 12:53:32 INFO  TC002_AccountRegistrationDiffPasswordTest:22 - Clicked on My Account
+2024-12-22 12:53:33 INFO  TC002_AccountRegistrationDiffPasswordTest:24 - Clicked on Register Link
+2024-12-22 12:53:33 INFO  TC002_AccountRegistrationDiffPasswordTest:28 - Inside Registration Page
+2024-12-22 12:53:33 INFO  TC002_AccountRegistrationDiffPasswordTest:30 - Entering customer details....
+2024-12-22 12:53:36 INFO  TC002_AccountRegistrationDiffPasswordTest:54 - Entered all the details
+2024-12-22 12:53:36 INFO  TC002_AccountRegistrationDiffPasswordTest:58 - Starting password mismatch message verfication....
+2024-12-22 12:53:36 INFO  TC002_AccountRegistrationDiffPasswordTest:63 - Message verfication successfull
+2024-12-22 12:53:36 INFO  TC002_AccountRegistrationDiffPasswordTest:76 - **** Finished TC002_AccountRegistrationDiffPasswordTest execution ****
+2024-12-22 12:53:40 INFO  TC001_AccountRegistrationTest:16 - **** Started TC001_AccountRegistrationTest execution ****
+2024-12-22 12:53:40 INFO  TC001_AccountRegistrationTest:23 - Inside the Home Page...
+2024-12-22 12:53:40 INFO  TC001_AccountRegistrationTest:26 - Clicked on My Account
+2024-12-22 12:53:41 INFO  TC001_AccountRegistrationTest:28 - Clicked on Register Link
+2024-12-22 12:53:41 INFO  TC001_AccountRegistrationTest:36 - Inside Registration Page
+2024-12-22 12:53:41 INFO  TC001_AccountRegistrationTest:37 - Entering all the Customer details...
+2024-12-22 12:53:43 INFO  TC001_AccountRegistrationTest:58 - Successfully entered all the details of the Customer...
+2024-12-22 12:53:45 INFO  TC001_AccountRegistrationTest:61 - Clicked on Continue button
+2024-12-22 12:53:45 INFO  TC001_AccountRegistrationTest:65 - About to start validation message
+2024-12-22 12:53:45 INFO  TC001_AccountRegistrationTest:71 - Validation Passed
+2024-12-22 12:53:45 INFO  TC001_AccountRegistrationTest:83 - **** Finished TC001_AccountRegistrationTest execution ****
+2024-12-22 12:53:50 INFO  TC002_AccountRegistrationDiffPasswordTest:15 - **** Starting TC002_AccountRegistrationDiffPasswordTest execution ****
+2024-12-22 12:53:50 INFO  TC002_AccountRegistrationDiffPasswordTest:20 - Inside Home Page.
+2024-12-22 12:53:50 INFO  TC002_AccountRegistrationDiffPasswordTest:22 - Clicked on My Account
+2024-12-22 12:53:50 INFO  TC002_AccountRegistrationDiffPasswordTest:24 - Clicked on Register Link
+2024-12-22 12:53:50 INFO  TC002_AccountRegistrationDiffPasswordTest:28 - Inside Registration Page
+2024-12-22 12:53:50 INFO  TC002_AccountRegistrationDiffPasswordTest:30 - Entering customer details....
+2024-12-22 12:53:53 INFO  TC002_AccountRegistrationDiffPasswordTest:54 - Entered all the details
+2024-12-22 12:53:53 INFO  TC002_AccountRegistrationDiffPasswordTest:58 - Starting password mismatch message verfication....
+2024-12-22 12:53:54 INFO  TC002_AccountRegistrationDiffPasswordTest:63 - Message verfication successfull
+2024-12-22 12:53:54 INFO  TC002_AccountRegistrationDiffPasswordTest:76 - **** Finished TC002_AccountRegistrationDiffPasswordTest execution ****
