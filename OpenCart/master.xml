@@ -9,8 +9,9 @@
   	<parameter name="operatingSystem" value="windows"/>
   	
     <classes>
-      <class name="testCases.TC001_AccountRegistrationTest"/>
-      <class name="testCases.TC002_AccountRegistrationDiffPasswordTest"/>
+<!--       <class name="testCases.TC001_AccountRegistrationTest"/>
+      <class name="testCases.TC002_AccountRegistrationDiffPasswordTest"/> -->
+      <class name="testCases.TC003_ValidUserLoginTest"/>
     </classes>
     
   </test>

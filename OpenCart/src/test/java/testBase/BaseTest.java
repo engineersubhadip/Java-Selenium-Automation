@@ -19,7 +19,9 @@ public class BaseTest {
 
 	public WebDriver driver;
 	public Logger logger;
-
+	public String validUserEmail;
+	public String validPassword;
+	
 	@BeforeClass
 	@Parameters({ "browser", "operatingSystem" })
 
@@ -49,7 +51,10 @@ public class BaseTest {
 		FileInputStream file = new FileInputStream(System.getProperty("user.dir")+"\\src\\test\\resources\\config.properties");
 		
 		properties.load(file);
+		
 		String browserURL = properties.getProperty("browserURL"); // reading value from properties file
+		validUserEmail = properties.getProperty("email");
+		validPassword = properties.getProperty("password");
 		
 		driver.get(browserURL);
 	}

@@ -5,20 +5,13 @@
     <parameter name="browser" value="chrome"/>
     <parameter name="operatingSystem" value="windows"/>
     <classes>
-      <class name="testCases.TC001_AccountRegistrationTest">
+      <class name="testCases.TC003_ValidUserLoginTest">
         <methods>
-          <include name="verfiy_account_registration"/>
+          <include name="validate_valid_user_credentials"/>
           <include name="setUp"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- testCases.TC001_AccountRegistrationTest -->
-      <class name="testCases.TC002_AccountRegistrationDiffPasswordTest">
-        <methods>
-          <include name="validate_incorrect_password_message"/>
-          <include name="setUp"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- testCases.TC002_AccountRegistrationDiffPasswordTest -->
+      </class> <!-- testCases.TC003_ValidUserLoginTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

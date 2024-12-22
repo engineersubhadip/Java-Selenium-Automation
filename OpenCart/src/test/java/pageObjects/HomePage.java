@@ -16,6 +16,8 @@ public class HomePage extends BasePage{
 	By myAccountOptionsLoc = By.xpath("//ul[@class='dropdown-menu dropdown-menu-right']");
 	@FindBy(xpath="//li //a[contains(@href,'register')]") WebElement Register;
 	
+	@FindBy(xpath="//a[normalize-space()='Login']")
+	WebElement Login;
 	
 	public void clickMyAccount() {
 		MyAccount.click();
@@ -24,5 +26,10 @@ public class HomePage extends BasePage{
 	public void clickRegister() {
 		waitForElementToAppear(myAccountOptionsLoc);
 		Register.click();
+	}
+
+	public void clickLogin() {
+		waitForElementToAppear(myAccountOptionsLoc);
+		Login.click();
 	}
 }
