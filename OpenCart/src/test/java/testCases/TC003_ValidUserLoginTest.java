@@ -29,8 +29,8 @@ public class TC003_ValidUserLoginTest extends BaseTest {
 		logger.info("Inside Login Page");
 		logger.info("Entering user credentials");
 		
-		loginPage.enterUserEmail(super.validUserEmail);
-		loginPage.enterUserPassword(super.validPassword);
+		loginPage.enterUserEmail(properties.getProperty("email"));
+		loginPage.enterUserPassword(properties.getProperty("password"));
 		loginPage.clickLoginButton();
 		
 		logger.info("Clicked on Continue button");
@@ -44,7 +44,7 @@ public class TC003_ValidUserLoginTest extends BaseTest {
 		
 		String confirmMessage = myAccount.getHeaderMessage();
 		
-		if (confirmMessage.equals("My Account")) {
+		if (confirmMessage.equals(properties.getProperty("loginConfirmationHeaderMessage"))) {
 			Assert.assertTrue(true);
 			logger.info("Validation successfull");
 		}else {
