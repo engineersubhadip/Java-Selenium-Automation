@@ -18,7 +18,8 @@
 			<PatternLayout pattern="${log-pattern}" />
 			<Policies>
 				<TimeBasedTriggeringPolicy />
-				<SizeBasedTriggeringPolicy size="5000" />
+				<!-- if 5000 is exceeded it will create another file -->
+				<SizeBasedTriggeringPolicy size="5000" /> 
 			</Policies>
 			<DefaultRolloverStrategy max="10" />
 		</RollingFile>
