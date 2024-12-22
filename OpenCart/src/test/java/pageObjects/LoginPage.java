@@ -36,12 +36,4 @@ public class LoginPage extends BasePage {
 		this.loginButton.click();
 	}
 	
-	public String checkConfirmationMessage() {
-		try {
-			waitForElementToAppear(confirmationMessageLoginLoc);
-			return confirmationMessageLogin.getText();
-		} catch(Exception e) {
-			return e.getMessage();
-		}
-	}
 }

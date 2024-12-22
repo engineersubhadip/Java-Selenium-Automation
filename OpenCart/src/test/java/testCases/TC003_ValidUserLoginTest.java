@@ -5,6 +5,7 @@ import org.testng.annotations.Test;
 
 import pageObjects.HomePage;
 import pageObjects.LoginPage;
+import pageObjects.MyAccountPage;
 import testBase.BaseTest;
 
 public class TC003_ValidUserLoginTest extends BaseTest {
@@ -36,8 +37,12 @@ public class TC003_ValidUserLoginTest extends BaseTest {
 
 //		Validation Part :-
 		
-		String confirmMessage = loginPage.checkConfirmationMessage();
+		MyAccountPage myAccount = new MyAccountPage(driver);
+		myAccount.waitForTitleToLoad("My Account");
+		
 		logger.info("Starting validation");
+		
+		String confirmMessage = myAccount.getHeaderMessage();
 		
 		if (confirmMessage.equals("My Account")) {
 			Assert.assertTrue(true);
