@@ -1,9 +1,12 @@
 package testBase;
 
+import java.io.FileInputStream;
+import java.io.IOException;
 import java.time.Duration;
+import java.util.Properties;
 
-import org.apache.logging.log4j.LogManager;  //Log4j
-import org.apache.logging.log4j.Logger;  //Log4j
+import org.apache.logging.log4j.LogManager; //Log4j
+import org.apache.logging.log4j.Logger; //Log4j
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
@@ -18,29 +21,37 @@ public class BaseTest {
 	public Logger logger;
 
 	@BeforeClass
-	@Parameters({"browser","operatingSystem"})
-	
-	public void setUp(String browser, String operatingSystem) {
+	@Parameters({ "browser", "operatingSystem" })
+
+	public void setUp(String browser, String operatingSystem) throws IOException {
 
 		logger = LogManager.getLogger(this.getClass()); // this.getClass() -> will dynamically capture the current
 														// class(test case) we are running.
 		// line 21 will load the log4j2.xml file
-		
+
 		if (browser.toLowerCase().contains("chrome")) {
-			driver = new ChromeDriver();			
-		}else if (browser.toLowerCase().contains("edge")) {
+			driver = new ChromeDriver();
+		} else if (browser.toLowerCase().contains("edge")) {
 			driver = new EdgeDriver();
-		}else if (browser.toLowerCase().contains("firefox")) {
+		} else if (browser.toLowerCase().contains("firefox")) {
 			driver = new FirefoxDriver();
-		}else {
+		} else {
 			return;
 		}
-		
+
 		driver.manage().deleteAllCookies();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-
-		driver.get("https://tutorialsninja.com/demo/");
+		
+//		Loading Config.properties file :-
+		
+		Properties properties = new Properties();
+		FileInputStream file = new FileInputStream(System.getProperty("user.dir")+"\\src\\test\\resources\\config.properties");
+		
+		properties.load(file);
+		String browserURL = properties.getProperty("browserURL"); // reading value from properties file
+		
+		driver.get(browserURL);
 	}
 
 	@AfterClass
