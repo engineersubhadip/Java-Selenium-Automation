@@ -1,14 +1,16 @@
-package testCases;
+package testBase;
 
 import java.time.Duration;
 
 import org.apache.logging.log4j.LogManager;  //Log4j
 import org.apache.logging.log4j.Logger;  //Log4j
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Parameters;
 
 public class BaseTest {
 
@@ -16,13 +18,24 @@ public class BaseTest {
 	public Logger logger;
 
 	@BeforeClass
-	public void setUp() {
+	@Parameters({"browser","operatingSystem"})
+	
+	public void setUp(String browser, String operatingSystem) {
 
 		logger = LogManager.getLogger(this.getClass()); // this.getClass() -> will dynamically capture the current
 														// class(test case) we are running.
 		// line 21 will load the log4j2.xml file
-
-		driver = new ChromeDriver();
+		
+		if (browser.toLowerCase().contains("chrome")) {
+			driver = new ChromeDriver();			
+		}else if (browser.toLowerCase().contains("edge")) {
+			driver = new EdgeDriver();
+		}else if (browser.toLowerCase().contains("firefox")) {
+			driver = new FirefoxDriver();
+		}else {
+			return;
+		}
+		
 		driver.manage().deleteAllCookies();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));

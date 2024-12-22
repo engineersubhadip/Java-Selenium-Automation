@@ -5,22 +5,30 @@ import org.testng.annotations.Test;
 
 import pageObjects.AccountRegistrationPage;
 import pageObjects.HomePage;
+import testBase.BaseTest;
 
 public class TC002_AccountRegistrationDiffPasswordTest extends BaseTest {
 
 	@Test
 	public void validate_incorrect_password_message() throws InterruptedException {
-
+		
+		logger.info("**** Starting TC002_AccountRegistrationDiffPasswordTest execution ****");
+		
+		try {
 		HomePage homePage = new HomePage(driver);
-
 		homePage.waitForTitleToLoad("Your Store");
+		logger.info("Inside Home Page.");
 		homePage.clickMyAccount();
+		logger.info("Clicked on My Account");
 		homePage.clickRegister();
+		logger.info("Clicked on Register Link");
 
 		AccountRegistrationPage regPage = new AccountRegistrationPage(driver);
-
 		regPage.waitForTitleToLoad("Register Account");
-
+		logger.info("Inside Registration Page");
+		
+		logger.info("Entering customer details....");
+		
 		String firstName = getRandomString();
 		regPage.enterFirstName(firstName);
 
@@ -43,9 +51,28 @@ public class TC002_AccountRegistrationDiffPasswordTest extends BaseTest {
 		
 		regPage.clickContinue();
 		
+		logger.info("Entered all the details");
+		
 //		Validation Part :-
+		
+		logger.info("Starting password mismatch message verfication....");
+		
+		String passwordMismatchMessage = regPage.validateIncorrectPasswordMessage();
+		
+		if (passwordMismatchMessage.equals("Password confirmation does not match password!")) {
+			logger.info("Message verfication successfull");
+			Assert.assertTrue(true);
+		}else {
+			logger.info("Message verfication failed");
+			logger.error("Error Logs");
+			Assert.assertTrue(false);
+		}
 
-		Assert.assertEquals(regPage.validateIncorrectPasswordMessage(),
-				"Password confirmation does not match password!");
+		} catch (Exception e) {
+			logger.error("Test case failed -> "+e.getMessage());
+			Assert.fail();
+		}
+		
+		logger.info("**** Finished TC002_AccountRegistrationDiffPasswordTest execution ****");
 	}
 }
