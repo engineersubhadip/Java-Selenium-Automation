@@ -62,12 +62,20 @@ public class TC001_AccountRegistrationTest extends BaseTest {
 //		Validation Part :-
 
 			logger.info("About to start validation message");
-			Assert.assertEquals(regPage.validateConfirmationMessage(), "Your Account Has Been Created!");
-			logger.info("Validation completed");
+			
+			String confirmMessage = regPage.validateConfirmationMessage();
+			
+			if (confirmMessage.equals("Your Account Has Been Created!")) {
+				Assert.assertTrue(true);
+				logger.info("Validation Passed");
+			}else {
+				logger.info("validation Failed");
+				logger.error("Error Logs");
+				logger.debug("Debug Logs");
+				Assert.assertTrue(false);
+			}
 
 		} catch (Exception e) {
-			logger.error("Test failed");
-//			logger.debug("Debug logs..."); // Unless we put level="DEBUG" inside log4j2.xml, we will not be able to capture debug logs
 			Assert.fail();
 		}
 
