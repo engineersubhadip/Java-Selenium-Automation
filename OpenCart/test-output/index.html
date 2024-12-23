@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">5 methods, 3 failed,   2 passed</span>
+                    <span class="method-stats">6 methods, 3 failed,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -103,12 +103,12 @@
                     <div class="method-list-content failed suite-MasterSuite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-MasterSuite" title="testCases.TC004_LoginDataDrivenTest" class="method navigator-link" hash-for-method="validate_login(pavanoltraining@gmail.com, test@123, Valid)">validate_login(pavanoltraining@gmail.com, test@123, Valid)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-MasterSuite" title="testCases.TC004_LoginDataDrivenTest" class="method navigator-link" hash-for-method="validate_login(lakshmi@yahoo.com, Laxmi, Invalid)">validate_login(lakshmi@yahoo.com, Laxmi, Invalid)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-MasterSuite" title="testCases.TC004_LoginDataDrivenTest" class="method navigator-link" hash-for-method="validate_login(lakshmi@yahoo.com, Laxmi, Invalid)">validate_login(lakshmi@yahoo.com, Laxmi, Invalid)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-MasterSuite" title="testCases.TC004_LoginDataDrivenTest" class="method navigator-link" hash-for-method="validate_login(pavanoltraining@gmail.com, test@123, Valid)">validate_login(pavanoltraining@gmail.com, test@123, Valid)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -135,6 +135,11 @@
                         <a href="#" panel-name="suite-MasterSuite" title="testCases.TC004_LoginDataDrivenTest" class="method navigator-link" hash-for-method="validate_login(abc123@gmail.com, test@123, Valid)">validate_login(abc123@gmail.com, test@123, Valid)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MasterSuite" title="testCases.TC004_LoginDataDrivenTest" class="method navigator-link" hash-for-method="validate_login(, test324, Invalid)">validate_login(, test324, Invalid)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                     </div> <!-- method-list-content passed suite-MasterSuite -->
                   </li>
                 </ul>
@@ -155,12 +160,12 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="validate_login(pavanoltraining@gmail.com, test@123, Valid)">
-                  </a> <!-- validate_login(pavanoltraining@gmail.com, test@123, Valid) -->
+                  <a name="validate_login(lakshmi@yahoo.com, Laxmi, Invalid)">
+                  </a> <!-- validate_login(lakshmi@yahoo.com, Laxmi, Invalid) -->
                   <span class="method-name">validate_login</span>
-                  <span class="parameters">(pavanoltraining@gmail.com,test@123,Valid)</span>
+                  <span class="parameters">(lakshmi@yahoo.com,Laxmi,Invalid)</span>
                   <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
-	at testCases.TC004_LoginDataDrivenTest.validate_login(TC004_LoginDataDrivenTest.java:62)
+	at testCases.TC004_LoginDataDrivenTest.validate_login(TC004_LoginDataDrivenTest.java:78)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
 ... Removed 29 stack frames
 </div> <!-- stack-trace -->
@@ -168,12 +173,12 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="validate_login(lakshmi@yahoo.com, Laxmi, Invalid)">
-                  </a> <!-- validate_login(lakshmi@yahoo.com, Laxmi, Invalid) -->
+                  <a name="validate_login(pavanoltraining@gmail.com, test@123, Valid)">
+                  </a> <!-- validate_login(pavanoltraining@gmail.com, test@123, Valid) -->
                   <span class="method-name">validate_login</span>
-                  <span class="parameters">(lakshmi@yahoo.com,Laxmi,Invalid)</span>
+                  <span class="parameters">(pavanoltraining@gmail.com,test@123,Valid)</span>
                   <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
-	at testCases.TC004_LoginDataDrivenTest.validate_login(TC004_LoginDataDrivenTest.java:78)
+	at testCases.TC004_LoginDataDrivenTest.validate_login(TC004_LoginDataDrivenTest.java:62)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
 ... Removed 29 stack frames
 </div> <!-- stack-trace -->
@@ -214,6 +219,14 @@
                   </a> <!-- validate_login(abc123@gmail.com, test@123, Valid) -->
                   <span class="method-name">validate_login</span>
                   <span class="parameters">(abc123@gmail.com,test@123,Valid)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validate_login(, test324, Invalid)">
+                  </a> <!-- validate_login(, test324, Invalid) -->
+                  <span class="method-name">validate_login</span>
+                  <span class="parameters">(,test324,Invalid)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -272,32 +285,36 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(5);
+data.addRows(6);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'validate_login')
 data.setCell(0, 2, 'testCases.TC004_LoginDataDrivenTest')
-data.setCell(0, 3, 11675);
+data.setCell(0, 3, 12385);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'validate_login')
 data.setCell(1, 2, 'testCases.TC004_LoginDataDrivenTest')
-data.setCell(1, 3, 11622);
+data.setCell(1, 3, 12347);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'validate_login')
 data.setCell(2, 2, 'testCases.TC004_LoginDataDrivenTest')
-data.setCell(2, 3, 2246);
+data.setCell(2, 3, 11723);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'validate_login')
 data.setCell(3, 2, 'testCases.TC004_LoginDataDrivenTest')
-data.setCell(3, 3, 2215);
+data.setCell(3, 3, 3392);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'validate_login')
 data.setCell(4, 2, 'testCases.TC004_LoginDataDrivenTest')
-data.setCell(4, 3, 1992);
+data.setCell(4, 3, 3325);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'validate_login')
+data.setCell(5, 2, 'testCases.TC004_LoginDataDrivenTest')
+data.setCell(5, 3, 3115);
 window.suiteTableData['MasterSuite']= { tableData: data, tableDiv: 'times-div-MasterSuite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 29 seconds</span>
+              <span class="suite-total-time">Total running time: 46 seconds</span>
               <div id="times-div-MasterSuite">
               </div> <!-- times-div-MasterSuite -->
             </div> <!-- times-div -->
@@ -330,53 +347,61 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">navigateBack</span>
-                <span class="method-start">4220 ms</span>
+                <span class="method-start">7040 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">validate_login(pavanoltraining@gmail.com, test@123, Valid)</span>
-                <span class="method-start">4436 ms</span>
+                <span class="method-start">7387 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">navigateBack</span>
-                <span class="method-start">16070 ms</span>
+                <span class="method-start">19760 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">validate_login(lakshmi@yahoo.com, Laxmi, Invalid)</span>
-                <span class="method-start">16450 ms</span>
+                <span class="method-start">19988 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">navigateBack</span>
-                <span class="method-start">18700 ms</span>
+                <span class="method-start">23322 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">validate_login(laksh@yahoo.com, Lakshmi, Invalid)</span>
-                <span class="method-start">18968 ms</span>
+                <span class="method-start">23656 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">navigateBack</span>
-                <span class="method-start">21185 ms</span>
+                <span class="method-start">26781 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">validate_login(laks@yahoo.com, xyz, Invalid)</span>
-                <span class="method-start">21432 ms</span>
+                <span class="method-start">27110 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">navigateBack</span>
-                <span class="method-start">33107 ms</span>
+                <span class="method-start">38833 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">validate_login(abc123@gmail.com, test@123, Valid)</span>
-                <span class="method-start">33448 ms</span>
+                <span class="method-start">39262 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">navigateBack</span>
+                <span class="method-start">42659 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validate_login(, test324, Invalid)</span>
+                <span class="method-start">42940 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">35449 ms</span>
+                <span class="method-start">55332 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
