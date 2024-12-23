@@ -11,12 +11,8 @@ public class MyAccountPage extends BasePage {
 		super(driver);
 	}
 	
-	@FindBy(xpath="//span[normalize-space()='My Account']")
-	WebElement MyAccount;
 	
-	By MyAccountOptionsLoc = By.xpath("//ul[@class='dropdown-menu dropdown-menu-right']");
-	
-	@FindBy(xpath="//ul[@class='dropdown-menu dropdown-menu-right']//a[normalize-space()='Logout']")
+	@FindBy(xpath="//a[@class='list-group-item'][normalize-space()='Logout']")
 	WebElement logoutLink;
 	
 	By myAccountHeaderMsgLoc = By.xpath("//h2[normalize-space()='My Account']");
@@ -25,21 +21,18 @@ public class MyAccountPage extends BasePage {
 	WebElement headerMessage;
 	
 	
-	public String getHeaderMessage() {
+	public boolean getHeaderMessage() {
 		try {
+			waitForTitleToLoad("My Account");
 			waitForElementToAppear(myAccountHeaderMsgLoc);
-			return headerMessage.getText();
+			return headerMessage.isDisplayed();
 		} catch(Exception e) {
-			return e.getMessage();
+			return false;
 		}
 	}
 	
-	public void clickMyAccount() {
-		MyAccount.click();
-	}
 	
 	public void clickLogout() {
-		waitForElementToAppear(MyAccountOptionsLoc);
 		logoutLink.click();
 	}
 }

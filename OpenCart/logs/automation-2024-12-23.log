@@ -1,0 +1,90 @@
+14:16:30.231 [main] INFO  testCases.TC004_LoginDataDrivenTest - **** Starting TC004_LoginDataDrivenTest execution ****
+14:16:30.252 [main] INFO  testCases.TC004_LoginDataDrivenTest - Inside the Home Page
+14:16:30.351 [main] INFO  testCases.TC004_LoginDataDrivenTest - Clicked My Account
+14:16:30.899 [main] INFO  testCases.TC004_LoginDataDrivenTest - Clicked Login Link from Home Page
+14:16:30.922 [main] INFO  testCases.TC004_LoginDataDrivenTest - Inside the Login Page
+14:16:30.923 [main] INFO  testCases.TC004_LoginDataDrivenTest - Entering user credentials
+14:16:31.896 [main] INFO  testCases.TC004_LoginDataDrivenTest - Clicked on Login Button and trying to Login...
+14:16:31.897 [main] INFO  testCases.TC004_LoginDataDrivenTest - Validation begins...
+14:16:31.976 [main] INFO  testCases.TC004_LoginDataDrivenTest - This combination is invalid but we are logged in. Test case failed lakshmi@yahoo.com
+14:16:32.385 [main] INFO  testCases.TC004_LoginDataDrivenTest - Inside Account Logout page
+14:16:33.003 [main] INFO  testCases.TC004_LoginDataDrivenTest - **** Starting TC004_LoginDataDrivenTest execution ****
+14:16:33.015 [main] INFO  testCases.TC004_LoginDataDrivenTest - Inside the Home Page
+14:16:33.107 [main] INFO  testCases.TC004_LoginDataDrivenTest - Clicked My Account
+14:16:33.428 [main] INFO  testCases.TC004_LoginDataDrivenTest - Clicked Login Link from Home Page
+14:16:33.446 [main] INFO  testCases.TC004_LoginDataDrivenTest - Inside the Login Page
+14:16:33.446 [main] INFO  testCases.TC004_LoginDataDrivenTest - Entering user credentials
+14:16:34.187 [main] INFO  testCases.TC004_LoginDataDrivenTest - Clicked on Login Button and trying to Login...
+14:16:34.187 [main] INFO  testCases.TC004_LoginDataDrivenTest - Validation begins...
+14:16:34.271 [main] INFO  testCases.TC004_LoginDataDrivenTest - This combination is invalid but we are logged in. Test case failed laksh@yahoo.com
+14:16:34.668 [main] INFO  testCases.TC004_LoginDataDrivenTest - Inside Account Logout page
+14:16:35.238 [main] INFO  testCases.TC004_LoginDataDrivenTest - **** Starting TC004_LoginDataDrivenTest execution ****
+14:16:35.253 [main] INFO  testCases.TC004_LoginDataDrivenTest - Inside the Home Page
+14:16:35.312 [main] INFO  testCases.TC004_LoginDataDrivenTest - Clicked My Account
+14:16:35.581 [main] INFO  testCases.TC004_LoginDataDrivenTest - Clicked Login Link from Home Page
+14:16:35.600 [main] INFO  testCases.TC004_LoginDataDrivenTest - Inside the Login Page
+14:16:35.600 [main] INFO  testCases.TC004_LoginDataDrivenTest - Entering user credentials
+14:16:36.240 [main] INFO  testCases.TC004_LoginDataDrivenTest - Clicked on Login Button and trying to Login...
+14:16:36.241 [main] INFO  testCases.TC004_LoginDataDrivenTest - Validation begins...
+14:16:46.583 [main] INFO  testCases.TC004_LoginDataDrivenTest - This combination is invalid and we are not logged in. Test case Pass laks@yahoo.com
+14:16:46.583 [main] INFO  testCases.TC004_LoginDataDrivenTest - Validation ends...
+14:16:46.583 [main] INFO  testCases.TC004_LoginDataDrivenTest - **** Finished TC004_LoginDataDrivenTest execution ****
+14:16:47.016 [main] INFO  testCases.TC004_LoginDataDrivenTest - **** Starting TC004_LoginDataDrivenTest execution ****
+14:16:47.023 [main] INFO  testCases.TC004_LoginDataDrivenTest - Inside the Home Page
+14:16:47.120 [main] INFO  testCases.TC004_LoginDataDrivenTest - Clicked My Account
+14:16:47.436 [main] INFO  testCases.TC004_LoginDataDrivenTest - Clicked Login Link from Home Page
+14:16:47.457 [main] INFO  testCases.TC004_LoginDataDrivenTest - Inside the Login Page
+14:16:47.457 [main] INFO  testCases.TC004_LoginDataDrivenTest - Entering user credentials
+14:16:48.157 [main] INFO  testCases.TC004_LoginDataDrivenTest - Clicked on Login Button and trying to Login...
+14:16:48.157 [main] INFO  testCases.TC004_LoginDataDrivenTest - Validation begins...
+14:16:48.268 [main] INFO  testCases.TC004_LoginDataDrivenTest - This combination is valid and we are successfully logged in. Test case Pass abc123@gmail.com
+14:16:48.700 [main] INFO  testCases.TC004_LoginDataDrivenTest - Inside Account Logout page
+14:16:49.115 [main] INFO  testCases.TC004_LoginDataDrivenTest - Validation ends...
+14:16:49.115 [main] INFO  testCases.TC004_LoginDataDrivenTest - **** Finished TC004_LoginDataDrivenTest execution ****
+14:16:49.327 [main] INFO  testCases.TC004_LoginDataDrivenTest - **** Starting TC004_LoginDataDrivenTest execution ****
+14:16:49.353 [main] INFO  testCases.TC004_LoginDataDrivenTest - Inside the Home Page
+14:16:49.430 [main] INFO  testCases.TC004_LoginDataDrivenTest - Clicked My Account
+14:16:49.726 [main] INFO  testCases.TC004_LoginDataDrivenTest - Clicked Login Link from Home Page
+14:16:49.744 [main] INFO  testCases.TC004_LoginDataDrivenTest - Inside the Login Page
+14:16:49.744 [main] INFO  testCases.TC004_LoginDataDrivenTest - Entering user credentials
+14:16:50.565 [main] INFO  testCases.TC004_LoginDataDrivenTest - Clicked on Login Button and trying to Login...
+14:16:50.565 [main] INFO  testCases.TC004_LoginDataDrivenTest - Validation begins...
+14:16:50.671 [main] INFO  testCases.TC004_LoginDataDrivenTest - This combination is valid and we are successfully logged in. Test case Pass s1994@g.com
+14:16:51.088 [main] INFO  testCases.TC004_LoginDataDrivenTest - Inside Account Logout page
+14:16:51.400 [main] INFO  testCases.TC004_LoginDataDrivenTest - Validation ends...
+14:16:51.400 [main] INFO  testCases.TC004_LoginDataDrivenTest - **** Finished TC004_LoginDataDrivenTest execution ****
+14:20:55.107 [main] DEBUG org.testng.TestNG - suiteXmlPath: "K:\Selenium Java Automation\OpenCart\master.xml"
+14:20:55.335 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  K:\Selenium Java Automation\OpenCart\master.xml
+
+14:20:58.869 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+14:20:58.872 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+14:20:58.873 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+14:20:59.255 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+14:20:59.256 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+14:20:59.257 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+14:20:59.279 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+14:20:59.280 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+14:20:59.280 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+14:20:59.310 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+14:20:59.310 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+14:20:59.311 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+14:20:59.336 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+14:20:59.336 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+14:20:59.337 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+14:20:59.356 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+14:20:59.356 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+14:20:59.357 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+14:20:59.375 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+14:20:59.376 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+14:20:59.376 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+14:20:59.397 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+14:20:59.398 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+14:20:59.399 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+14:20:59.421 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+14:20:59.421 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+14:20:59.422 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+14:20:59.438 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+14:20:59.439 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+14:20:59.439 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+14:20:59.459 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels

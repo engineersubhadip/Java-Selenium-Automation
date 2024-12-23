@@ -9,7 +9,7 @@ import pageObjects.MyAccountPage;
 import testBase.BaseTest;
 
 public class TC003_ValidUserLoginTest extends BaseTest {
-	
+	public int counter = 1;
 	@Test
 	public void validate_valid_user_credentials() {
 		
@@ -42,11 +42,12 @@ public class TC003_ValidUserLoginTest extends BaseTest {
 		
 		logger.info("Starting validation");
 		
-		String confirmMessage = myAccount.getHeaderMessage();
+		boolean confirmMessage = myAccount.getHeaderMessage();
 		
-		if (confirmMessage.equals(properties.getProperty("loginConfirmationHeaderMessage"))) {
+		if (confirmMessage) {
 			Assert.assertTrue(true);
 			logger.info("Validation successfull");
+			counter ++;
 		}else {
 			logger.error("Validation failure");
 			Assert.assertTrue(false);
@@ -55,7 +56,7 @@ public class TC003_ValidUserLoginTest extends BaseTest {
 			logger.error("Error Message -> "+e.getMessage());
 			Assert.fail();
 		}
-		
+		System.out.println("Counter value : "+counter);
 		logger.info("**** Finished TC003_ValidUserLoginTest execution ****");
 	}
 }

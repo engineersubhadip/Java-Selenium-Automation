@@ -1,6 +1,72 @@
-2024-12-22 21:38:48 INFO  TC003_ValidUserLoginTest:29 - Inside Login Page
-2024-12-22 21:38:48 INFO  TC003_ValidUserLoginTest:30 - Entering user credentials
-2024-12-22 21:38:49 INFO  TC003_ValidUserLoginTest:36 - Clicked on Continue button
-2024-12-22 21:38:49 INFO  TC003_ValidUserLoginTest:43 - Starting validation
-2024-12-22 21:38:49 INFO  TC003_ValidUserLoginTest:49 - Validation successfull
-2024-12-22 21:38:49 INFO  TC003_ValidUserLoginTest:59 - **** Finished TC003_ValidUserLoginTest execution ****
+14:20:59.460 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+14:20:59.464 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+14:20:59.480 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+14:20:59.481 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+14:20:59.481 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+14:20:59.498 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+14:20:59.499 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+14:20:59.500 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+14:20:59.520 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+14:20:59.521 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+14:20:59.522 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+14:20:59.536 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+14:20:59.539 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+14:20:59.540 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+14:20:59.555 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+14:20:59.555 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+14:20:59.556 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+14:20:59.572 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+14:20:59.573 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+14:20:59.574 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+14:20:59.819 [main] INFO  testCases.TC004_LoginDataDrivenTest - **** Starting TC004_LoginDataDrivenTest execution ****
+14:20:59.849 [main] INFO  testCases.TC004_LoginDataDrivenTest - Inside the Home Page
+14:20:59.920 [main] INFO  testCases.TC004_LoginDataDrivenTest - Clicked My Account
+14:21:00.211 [main] INFO  testCases.TC004_LoginDataDrivenTest - Clicked Login Link from Home Page
+14:21:00.234 [main] INFO  testCases.TC004_LoginDataDrivenTest - Inside the Login Page
+14:21:00.234 [main] INFO  testCases.TC004_LoginDataDrivenTest - Entering user credentials
+14:21:00.939 [main] INFO  testCases.TC004_LoginDataDrivenTest - Clicked on Login Button and trying to Login...
+14:21:00.939 [main] INFO  testCases.TC004_LoginDataDrivenTest - Validation begins...
+14:21:11.427 [main] INFO  testCases.TC004_LoginDataDrivenTest - This combination is valid but we are not successfully logged in. Test case Failed pavanoltraining@gmail.com
+14:21:11.821 [main] INFO  testCases.TC004_LoginDataDrivenTest - **** Starting TC004_LoginDataDrivenTest execution ****
+14:21:11.855 [main] INFO  testCases.TC004_LoginDataDrivenTest - Inside the Home Page
+14:21:11.929 [main] INFO  testCases.TC004_LoginDataDrivenTest - Clicked My Account
+14:21:12.422 [main] INFO  testCases.TC004_LoginDataDrivenTest - Clicked Login Link from Home Page
+14:21:12.439 [main] INFO  testCases.TC004_LoginDataDrivenTest - Inside the Login Page
+14:21:12.440 [main] INFO  testCases.TC004_LoginDataDrivenTest - Entering user credentials
+14:21:13.152 [main] INFO  testCases.TC004_LoginDataDrivenTest - Clicked on Login Button and trying to Login...
+14:21:13.153 [main] INFO  testCases.TC004_LoginDataDrivenTest - Validation begins...
+14:21:13.282 [main] INFO  testCases.TC004_LoginDataDrivenTest - This combination is invalid but we are logged in. Test case failed lakshmi@yahoo.com
+14:21:13.735 [main] INFO  testCases.TC004_LoginDataDrivenTest - Inside Account Logout page
+14:21:14.338 [main] INFO  testCases.TC004_LoginDataDrivenTest - **** Starting TC004_LoginDataDrivenTest execution ****
+14:21:14.347 [main] INFO  testCases.TC004_LoginDataDrivenTest - Inside the Home Page
+14:21:14.420 [main] INFO  testCases.TC004_LoginDataDrivenTest - Clicked My Account
+14:21:14.767 [main] INFO  testCases.TC004_LoginDataDrivenTest - Clicked Login Link from Home Page
+14:21:14.778 [main] INFO  testCases.TC004_LoginDataDrivenTest - Inside the Login Page
+14:21:14.778 [main] INFO  testCases.TC004_LoginDataDrivenTest - Entering user credentials
+14:21:15.594 [main] INFO  testCases.TC004_LoginDataDrivenTest - Clicked on Login Button and trying to Login...
+14:21:15.594 [main] INFO  testCases.TC004_LoginDataDrivenTest - Validation begins...
+14:21:15.677 [main] INFO  testCases.TC004_LoginDataDrivenTest - This combination is invalid but we are logged in. Test case failed laksh@yahoo.com
+14:21:16.252 [main] INFO  testCases.TC004_LoginDataDrivenTest - Inside Account Logout page
+14:21:16.804 [main] INFO  testCases.TC004_LoginDataDrivenTest - **** Starting TC004_LoginDataDrivenTest execution ****
+14:21:16.823 [main] INFO  testCases.TC004_LoginDataDrivenTest - Inside the Home Page
+14:21:16.907 [main] INFO  testCases.TC004_LoginDataDrivenTest - Clicked My Account
+14:21:17.242 [main] INFO  testCases.TC004_LoginDataDrivenTest - Clicked Login Link from Home Page
+14:21:17.275 [main] INFO  testCases.TC004_LoginDataDrivenTest - Inside the Login Page
+14:21:17.276 [main] INFO  testCases.TC004_LoginDataDrivenTest - Entering user credentials
+14:21:17.996 [main] INFO  testCases.TC004_LoginDataDrivenTest - Clicked on Login Button and trying to Login...
+14:21:17.996 [main] INFO  testCases.TC004_LoginDataDrivenTest - Validation begins...
+14:21:28.476 [main] INFO  testCases.TC004_LoginDataDrivenTest - This combination is invalid and we are not logged in. Test case Pass laks@yahoo.com
+14:21:28.476 [main] INFO  testCases.TC004_LoginDataDrivenTest - Validation ends...
+14:21:28.476 [main] INFO  testCases.TC004_LoginDataDrivenTest - **** Finished TC004_LoginDataDrivenTest execution ****
+14:21:28.819 [main] INFO  testCases.TC004_LoginDataDrivenTest - **** Starting TC004_LoginDataDrivenTest execution ****
+14:21:28.852 [main] INFO  testCases.TC004_LoginDataDrivenTest - Inside the Home Page
+14:21:28.937 [main] INFO  testCases.TC004_LoginDataDrivenTest - Clicked My Account
+14:21:29.223 [main] INFO  testCases.TC004_LoginDataDrivenTest - Clicked Login Link from Home Page
+14:21:29.245 [main] INFO  testCases.TC004_LoginDataDrivenTest - Inside the Login Page
+14:21:29.245 [main] INFO  testCases.TC004_LoginDataDrivenTest - Entering user credentials
+14:21:29.980 [main] INFO  testCases.TC004_LoginDataDrivenTest - Clicked on Login Button and trying to Login...
+14:21:29.981 [main] INFO  testCases.TC004_LoginDataDrivenTest - Validation begins...
+14:21:30.095 [main] INFO  testCases.TC004_LoginDataDrivenTest - This combination is valid and we are successfully logged in. Test case Pass abc123@gmail.com
+14:21:30.479 [main] INFO  testCases.TC004_LoginDataDrivenTest - Inside Account Logout page
+14:21:30.808 [main] INFO  testCases.TC004_LoginDataDrivenTest - Validation ends...
+14:21:30.808 [main] INFO  testCases.TC004_LoginDataDrivenTest - **** Finished TC004_LoginDataDrivenTest execution ****
