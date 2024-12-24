@@ -3,22 +3,24 @@
 
 <suite name="GroupingSuite">
 
-  <test name="GroupingTest">
-  
-  	<parameter name="browser" value="chrome"/>
-  	<parameter name="operatingSystem" value="windows"/>
-  	
-  	<groups>
-  		<run>
-  			<include name="sanity"/>
-  		</run>
-  	</groups>
-  	
-    <classes>
-      <class name="testCases.TC001_AccountRegistrationTest"/>
-      <class name="testCases.TC002_AccountRegistrationDiffPasswordTest"/>
-      <class name="testCases.TC003_ValidUserLoginTest"/>
-    </classes>
-  </test>
-  
+	<groups>
+		<run>
+			<include name="sanity" />
+		</run>
+	</groups>
+
+	<test name="GroupingTest">
+
+		<parameter name="browser" value="chrome" />
+		<parameter name="operatingSystem" value="windows" />
+
+
+		<classes>
+			<class name="testCases.TC001_AccountRegistrationTest" />
+			<class
+				name="testCases.TC002_AccountRegistrationDiffPasswordTest" />
+			<class name="testCases.TC003_ValidUserLoginTest" />
+		</classes>
+	</test>
+
 </suite>
