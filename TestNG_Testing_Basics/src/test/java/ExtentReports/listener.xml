@@ -11,6 +11,7 @@
 	<test name="Test1">
 		<classes>
 			<class name="ExtentReports.LoginTest" />
+			<class name="ExtentReports.OrangeHRMTest" />
 		</classes>
 	</test>
 

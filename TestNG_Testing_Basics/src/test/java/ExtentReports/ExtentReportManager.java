@@ -25,7 +25,7 @@ public class ExtentReportManager implements ITestListener {
 		
 		sparkReporter.config().setDocumentTitle("Automation Report"); // title of the report
 		sparkReporter.config().setReportName("Login Test Report"); // name of the report
-		sparkReporter.config().setTheme(Theme.STANDARD); // Theme of the report
+		sparkReporter.config().setTheme(Theme.DARK); // Theme of the report
 		
 //		Create the report and apply the UI on the report :-
 	

@@ -28,6 +28,6 @@ public class Listener implements ITestListener {
 	}
 
 	public void onFinish(ITestContext context) { // This will execute only once for a particular class.
-		System.out.println("On test finish...");
+		System.out.println("On finish...");
 	}
 }
