@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [PracticeBeforeAftertest]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="TestModule1(failed)">
+    <classes>
+      <class name="Practice.C22">
+        <methods>
+          <include name="logout"/>
+          <include name="at"/>
+          <include name="login"/>
+        </methods>
+      </class> <!-- Practice.C22 -->
+      <class name="Practice.C11">
+        <methods>
+          <include name="logout"/>
+          <include name="bt"/>
+          <include name="login"/>
+        </methods>
+      </class> <!-- Practice.C11 -->
+    </classes>
+  </test> <!-- TestModule1(failed) -->
+</suite> <!-- Failed suite [PracticeBeforeAftertest] -->

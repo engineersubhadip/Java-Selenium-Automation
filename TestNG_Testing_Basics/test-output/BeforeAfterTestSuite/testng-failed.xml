@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [BeforeAfterTestSuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="TestModule1(failed)">
+    <classes>
+      <class name="DependencyMethods.C2_BeforeAfterTest">
+        <methods>
+          <include name="at"/>
+          <include name="logout"/>
+          <include name="login"/>
+        </methods>
+      </class> <!-- DependencyMethods.C2_BeforeAfterTest -->
+      <class name="DependencyMethods.C1_BeforeAfterTest">
+        <methods>
+          <include name="login"/>
+          <include name="logout"/>
+          <include name="bt"/>
+        </methods>
+      </class> <!-- DependencyMethods.C1_BeforeAfterTest -->
+    </classes>
+  </test> <!-- TestModule1(failed) -->
+</suite> <!-- Failed suite [BeforeAfterTestSuite] -->

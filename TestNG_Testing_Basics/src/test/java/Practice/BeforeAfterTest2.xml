@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="PracticeBeforeAftertest">
+
+  <test name="TestModule1">
+    <classes>
+      	<class name="Practice.C11"/>
+      	<class name="Practice.C22"/>
+    </classes>
+  </test>
+  
+    <test name="TestModule2">
+    	<classes>
+      		<class name="Practice.C33"/>
+      		<class name="Practice.C44"/>
+    	</classes>
+  </test>
+  
+</suite>

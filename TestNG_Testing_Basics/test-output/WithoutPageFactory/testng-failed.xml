@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [WithoutPageFactory]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="LoginTestModule(failed)">
+    <classes>
+      <class name="Practice.WithoutPageFactory.LoginTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="loginFunctionality"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- Practice.WithoutPageFactory.LoginTest -->
+    </classes>
+  </test> <!-- LoginTestModule(failed) -->
+</suite> <!-- Failed suite [WithoutPageFactory] -->
