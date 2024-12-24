@@ -1,27 +1,13 @@
-15:21:23.114 [main] INFO  testCases.TC004_LoginDataDrivenTest - Validation begins...
-15:21:33.158 [main] INFO  testCases.TC004_LoginDataDrivenTest - This combination is invalid and we are not logged in. Test case Pass laks@yahoo.com
-15:21:33.158 [main] INFO  testCases.TC004_LoginDataDrivenTest - Validation ends...
-15:21:33.158 [main] INFO  testCases.TC004_LoginDataDrivenTest - **** Finished TC004_LoginDataDrivenTest execution ****
-15:21:33.587 [main] INFO  testCases.TC004_LoginDataDrivenTest - **** Starting TC004_LoginDataDrivenTest execution ****
-15:21:33.601 [main] INFO  testCases.TC004_LoginDataDrivenTest - Inside the Home Page
-15:21:33.819 [main] INFO  testCases.TC004_LoginDataDrivenTest - Clicked My Account
-15:21:34.458 [main] INFO  testCases.TC004_LoginDataDrivenTest - Clicked Login Link from Home Page
-15:21:34.500 [main] INFO  testCases.TC004_LoginDataDrivenTest - Inside the Login Page
-15:21:34.500 [main] INFO  testCases.TC004_LoginDataDrivenTest - Entering user credentials
-15:21:35.761 [main] INFO  testCases.TC004_LoginDataDrivenTest - Clicked on Login Button and trying to Login...
-15:21:35.761 [main] INFO  testCases.TC004_LoginDataDrivenTest - Validation begins...
-15:21:35.905 [main] INFO  testCases.TC004_LoginDataDrivenTest - This combination is valid and we are successfully logged in. Test case Pass abc123@gmail.com
-15:21:36.542 [main] INFO  testCases.TC004_LoginDataDrivenTest - Inside Account Logout page
-15:21:36.979 [main] INFO  testCases.TC004_LoginDataDrivenTest - Validation ends...
-15:21:36.979 [main] INFO  testCases.TC004_LoginDataDrivenTest - **** Finished TC004_LoginDataDrivenTest execution ****
-15:21:37.265 [main] INFO  testCases.TC004_LoginDataDrivenTest - **** Starting TC004_LoginDataDrivenTest execution ****
-15:21:37.282 [main] INFO  testCases.TC004_LoginDataDrivenTest - Inside the Home Page
-15:21:37.473 [main] INFO  testCases.TC004_LoginDataDrivenTest - Clicked My Account
-15:21:37.937 [main] INFO  testCases.TC004_LoginDataDrivenTest - Clicked Login Link from Home Page
-15:21:37.978 [main] INFO  testCases.TC004_LoginDataDrivenTest - Inside the Login Page
-15:21:37.978 [main] INFO  testCases.TC004_LoginDataDrivenTest - Entering user credentials
-15:21:39.149 [main] INFO  testCases.TC004_LoginDataDrivenTest - Clicked on Login Button and trying to Login...
-15:21:39.149 [main] INFO  testCases.TC004_LoginDataDrivenTest - Validation begins...
-15:21:49.650 [main] INFO  testCases.TC004_LoginDataDrivenTest - This combination is invalid and we are not logged in. Test case Pass 
-15:21:49.650 [main] INFO  testCases.TC004_LoginDataDrivenTest - Validation ends...
-15:21:49.650 [main] INFO  testCases.TC004_LoginDataDrivenTest - **** Finished TC004_LoginDataDrivenTest execution ****
+12:37:30.031 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  K:\Selenium Java Automation\OpenCart\grouping.xml
+
+12:37:33.449 [main] INFO  testCases.TC003_ValidUserLoginTest - **** Starting TC003_ValidUserLoginTest execution ****
+12:37:33.478 [main] INFO  testCases.TC003_ValidUserLoginTest - Inside Home Page
+12:37:33.546 [main] INFO  testCases.TC003_ValidUserLoginTest - Clicked My Account
+12:37:33.814 [main] INFO  testCases.TC003_ValidUserLoginTest - Clicked Login Link
+12:37:33.825 [main] INFO  testCases.TC003_ValidUserLoginTest - Inside Login Page
+12:37:33.825 [main] INFO  testCases.TC003_ValidUserLoginTest - Entering user credentials
+12:37:34.582 [main] INFO  testCases.TC003_ValidUserLoginTest - Clicked on Continue button
+12:37:34.595 [main] INFO  testCases.TC003_ValidUserLoginTest - Starting validation
+12:37:34.650 [main] INFO  testCases.TC003_ValidUserLoginTest - Validation successfull
+12:37:34.653 [main] INFO  testCases.TC003_ValidUserLoginTest - **** Finished TC003_ValidUserLoginTest execution ****

@@ -9,7 +9,7 @@ import testBase.BaseTest;
 
 public class TC002_AccountRegistrationDiffPasswordTest extends BaseTest {
 
-	@Test
+	@Test(groups= {"regression", "master"})
 	public void validate_incorrect_password_message() throws InterruptedException {
 		
 		logger.info("**** Starting TC002_AccountRegistrationDiffPasswordTest execution ****");

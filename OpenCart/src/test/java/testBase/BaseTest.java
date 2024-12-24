@@ -21,13 +21,14 @@ public class BaseTest {
 	public Logger logger;
 	public Properties properties;
 	
-	@BeforeClass
+	@BeforeClass(groups = {"sanity", "regression", "master"})
 	@Parameters({ "browser", "operatingSystem" })
 
 	public void setUp(String browser, String operatingSystem) throws IOException {
 
 		logger = LogManager.getLogger(this.getClass()); // this.getClass() -> will dynamically capture the current
-														// class(test case) we are running.
+		
+		// class(test case) we are running.
 		// line 21 will load the log4j2.xml file
 
 		if (browser.toLowerCase().contains("chrome")) {
@@ -56,7 +57,7 @@ public class BaseTest {
 		driver.get(browserURL);
 	}
 
-	@AfterClass
+	@AfterClass(groups = {"sanity", "regression", "master"})
 	public void tearDown() {
 		driver.quit();
 	}
