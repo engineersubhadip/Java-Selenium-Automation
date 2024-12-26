@@ -10,11 +10,6 @@ public class Listener implements ITestListener {
 		System.out.println("On start...");
 	}
 
-	public void onTestStart(ITestResult result) { // This will execute multiple times before every @Test in a particular
-													// class.
-		System.out.println("On test start...");
-	}
-
 	public void onTestSuccess(ITestResult result) {
 		System.out.println("On test success...");
 	}

@@ -19,7 +19,7 @@ public class LoginTest {
 	
 	@BeforeClass
 	public void setUp () {
-		
+		System.out.println("Inside Before Class of LoginTest Class");
 		driver = new ChromeDriver();
 		driver.manage().deleteAllCookies();
 		driver.manage().window().maximize();
@@ -32,16 +32,17 @@ public class LoginTest {
 	
 	@AfterClass
 	public void tearDown () {
+		System.out.println("Inside After Class of LoginTest Class");
 		driver.quit();
 	}
 	
 	@Test
 	public void validate_loginTest () {
-		
+		System.out.println("Inside Test Method of LoginTest Class");
 		wait.until(ExpectedConditions.titleContains("OrangeHRM"));
 		
 		driver.findElement(By.xpath("//input[@placeholder='Username']")).sendKeys("Admin");
-		driver.findElement(By.xpath("//input[@placeholder='Password']")).sendKeys("admin123");
+		driver.findElement(By.xpath("//input[@placeholder='Password']")).sendKeys("admin1234");
 		driver.findElement(By.xpath("//button[normalize-space()='Login']")).click();
 		
 //		Validation Point :-

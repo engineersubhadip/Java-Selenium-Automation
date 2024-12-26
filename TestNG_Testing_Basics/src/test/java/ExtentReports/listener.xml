@@ -9,8 +9,10 @@
 	</listeners>
 
 	<test name="Test1">
+		<parameter name = "browser" value = "chrome"/>
+		<parameter name = "os" value = "Windows"/>
 		<classes>
-			<class name="ExtentReports.LoginTest" />
+			<!-- <class name="ExtentReports.LoginTest" /> -->
 			<class name="ExtentReports.OrangeHRMTest" />
 		</classes>
 	</test>
