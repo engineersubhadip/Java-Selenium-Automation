@@ -66,7 +66,7 @@ public class ExtentReportManager implements ITestListener {
 //		1. Create an entry corresponding to particular @Test Class/method
 		test = extent.createTest(result.getTestClass().getName()); // On the report, entry is made for the particular @Test Class
 //		2. If the @Test Method is part of any groups, update that in the report
-		test.assignCategory(result.getMethod().getMethodName());
+		test.assignCategory(result.getMethod().getGroups());
 //		3. Update the status in the report.
 		test.log(Status.PASS, result.getName()); // made the particular @Test Method pass
 	}
@@ -78,7 +78,7 @@ public class ExtentReportManager implements ITestListener {
 //		1. Create an entry in the report corresponding to the particular @Test Method/Class.
 		test = extent.createTest(result.getTestClass().getName());
 //		2. Assign group to the particular entry if the @Test Method was part of some group or not.
-		test.assignCategory(result.getMethod().getMethodName());
+		test.assignCategory(result.getMethod().getGroups());
 //		4. Update the status.
 		test.log(Status.FAIL, result.getName());
 		test.info(result.getThrowable());
@@ -99,7 +99,7 @@ public class ExtentReportManager implements ITestListener {
 //		1. Create an entry corresponding to the particular @Test Class/Method.
 		test = extent.createTest(result.getTestClass().getName());
 //		2. Assign the @Test to a particular group if it is a part of.
-		test.assignCategory(result.getMethod().getMethodName());
+		test.assignCategory(result.getMethod().getGroups());
 //		3. Update the status in the report.
 		test.log(Status.SKIP, result.getName());
 		test.info(result.getThrowable().getMessage());

@@ -25,7 +25,6 @@ public class OrangeHRMTest extends BaseTest {
 		wait.until(ExpectedConditions.titleContains("OrangeHRM"));
 		boolean logoStatus = driver.findElement(By.xpath("//div[@class='orangehrm-login-branding']"))
 				.isDisplayed();
-		super.captureScreenShot();
 		Assert.assertEquals(logoStatus, true);
 	}
 
@@ -34,8 +33,6 @@ public class OrangeHRMTest extends BaseTest {
 		driver.findElement(By.xpath("//input[@placeholder='Username']")).sendKeys("Admin");
 		driver.findElement(By.xpath("//input[@placeholder='Password']")).sendKeys("admin124");
 		driver.findElement(By.xpath("//button[@type='submit']")).click();
-		
-		super.captureScreenShot();
 		
 		wait.until(ExpectedConditions
 				.visibilityOfElementLocated(By.xpath("//i[contains(@class,'oxd-icon bi-caret-down')]")));
