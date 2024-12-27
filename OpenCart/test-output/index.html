@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-GroupingSuite" class="navigator-link">
-              <span class="suite-name border-passed">GroupingSuite</span>
+              <span class="suite-name border-failed">GroupingSuite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -60,7 +60,7 @@
                 </li>
                 <li>
                   <a href="#" panel-name="group-GroupingSuite" class="navigator-link ">
-                    <span>2 groups</span>
+                    <span>3 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">3 methods, 1 failed,   2 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-GroupingSuite" class="hide-methods failed suite-GroupingSuite"> (hide)</a> <!-- hide-methods failed suite-GroupingSuite -->
+                      <a href="#" panel-name="suite-GroupingSuite" class="show-methods failed suite-GroupingSuite"> (show)</a> <!-- show-methods failed suite-GroupingSuite -->
+                    </span>
+                    <div class="method-list-content failed suite-GroupingSuite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-GroupingSuite" title="testCases.TC003_ValidUserLoginTest" class="method navigator-link" hash-for-method="validate_valid_user_credentials">validate_valid_user_credentials</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-GroupingSuite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,7 +117,12 @@
                     <div class="method-list-content passed suite-GroupingSuite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-GroupingSuite" title="testCases.TC003_ValidUserLoginTest" class="method navigator-link" hash-for-method="validate_valid_user_credentials">validate_valid_user_credentials</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-GroupingSuite" title="testCases.TC002_AccountRegistrationDiffPasswordTest" class="method navigator-link" hash-for-method="validate_incorrect_password_message">validate_incorrect_password_message</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-GroupingSuite" title="testCases.TC001_AccountRegistrationTest" class="method navigator-link" hash-for-method="verfiy_account_registration">verfiy_account_registration</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-GroupingSuite -->
@@ -118,9 +137,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-GroupingSuite" class="panel GroupingSuite">
-          <div class="suite-GroupingSuite-class-passed">
+          <div class="suite-GroupingSuite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="failed.png"/>
               <span class="class-name">testCases.TC003_ValidUserLoginTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -129,6 +148,41 @@
                   <a name="validate_valid_user_credentials">
                   </a> <!-- validate_valid_user_credentials -->
                   <span class="method-name">validate_valid_user_credentials</span>
+                  <div class="stack-trace">java.lang.AssertionError: null
+	at testCases.TC003_ValidUserLoginTest.validate_valid_user_credentials(TC003_ValidUserLoginTest.java:56)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-GroupingSuite-class-failed -->
+          <div class="suite-GroupingSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testCases.TC002_AccountRegistrationDiffPasswordTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="validate_incorrect_password_message">
+                  </a> <!-- validate_incorrect_password_message -->
+                  <span class="method-name">validate_incorrect_password_message</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-GroupingSuite-class-passed -->
+          <div class="suite-GroupingSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testCases.TC001_AccountRegistrationTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verfiy_account_registration">
+                  </a> <!-- verfiy_account_registration -->
+                  <span class="method-name">verfiy_account_registration</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -143,14 +197,22 @@
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;GroupingSuite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;groups&gt;
+    &lt;run&gt;
+      &lt;include name=&quot;master&quot;/&gt;
+    &lt;/run&gt;
+  &lt;/groups&gt;
+  &lt;groups&gt;
+    &lt;run&gt;
+      &lt;include name=&quot;master&quot;/&gt;
+    &lt;/run&gt;
+  &lt;/groups&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;utilities.ExtentReportManager&quot;/&gt;
+  &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;GroupingTest&quot;&gt;
     &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
     &lt;parameter name=&quot;operatingSystem&quot; value=&quot;windows&quot;/&gt;
-    &lt;groups&gt;
-      &lt;run&gt;
-        &lt;include name=&quot;sanity&quot;/&gt;
-      &lt;/run&gt;
-    &lt;/groups&gt;
     &lt;classes&gt;
       &lt;class name=&quot;testCases.TC001_AccountRegistrationTest&quot;/&gt;
       &lt;class name=&quot;testCases.TC002_AccountRegistrationDiffPasswordTest&quot;/&gt;
@@ -182,7 +244,27 @@
               <span class="test-group-name">master</span>
               <br/>
               <div class="method-in-group">
+                <span class="method-in-group-name">validate_incorrect_password_message</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
                 <span class="method-in-group-name">validate_valid_user_credentials</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verfiy_account_registration</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">regression</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">validate_incorrect_password_message</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verfiy_account_registration</span>
                 <br/>
               </div> <!-- method-in-group -->
             </div> <!-- test-group -->
@@ -210,16 +292,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(3);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'validate_valid_user_credentials')
 data.setCell(0, 2, 'testCases.TC003_ValidUserLoginTest')
-data.setCell(0, 3, 1212);
+data.setCell(0, 3, 11793);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'verfiy_account_registration')
+data.setCell(1, 2, 'testCases.TC001_AccountRegistrationTest')
+data.setCell(1, 3, 4520);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'validate_incorrect_password_message')
+data.setCell(2, 2, 'testCases.TC002_AccountRegistrationDiffPasswordTest')
+data.setCell(2, 3, 3999);
 window.suiteTableData['GroupingSuite']= { tableData: data, tableDiv: 'times-div-GroupingSuite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 seconds</span>
+              <span class="suite-total-time">Total running time: 20 seconds</span>
               <div id="times-div-GroupingSuite">
               </div> <!-- times-div-GroupingSuite -->
             </div> <!-- times-div -->
@@ -234,23 +324,9 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-GroupingSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">2 ignored methods</span>
+            <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">testCases.TC002_AccountRegistrationDiffPasswordTest</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">validate_incorrect_password_message</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">testCases.TC001_AccountRegistrationTest</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">verfiy_account_registration</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-GroupingSuite" class="panel">
@@ -259,18 +335,50 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">testCases.TC003_ValidUserLoginTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">testCases.TC001_AccountRegistrationTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setUp(chrome, windows)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">validate_valid_user_credentials</span>
-                <span class="method-start">3383 ms</span>
+                <span class="method-name">verfiy_account_registration</span>
+                <span class="method-start">6821 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">4598 ms</span>
+                <span class="method-start">11379 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.TC002_AccountRegistrationDiffPasswordTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp(chrome, windows)</span>
+                <span class="method-start">11792 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">validate_incorrect_password_message</span>
+                <span class="method-start">15518 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">19520 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.TC003_ValidUserLoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp(chrome, windows)</span>
+                <span class="method-start">19831 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">validate_valid_user_credentials</span>
+                <span class="method-start">23724 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">35788 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

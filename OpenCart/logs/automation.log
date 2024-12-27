@@ -1,13 +1,88 @@
-12:37:30.031 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+21:55:16.235 [main] INFO  testCases.TC002_AccountRegistrationDiffPasswordTest - **** Finished TC002_AccountRegistrationDiffPasswordTest execution ****
+21:55:19.018 [main] INFO  testCases.TC003_ValidUserLoginTest - **** Starting TC003_ValidUserLoginTest execution ****
+21:55:19.026 [main] INFO  testCases.TC003_ValidUserLoginTest - Inside Home Page
+21:55:19.108 [main] INFO  testCases.TC003_ValidUserLoginTest - Clicked My Account
+21:55:19.371 [main] INFO  testCases.TC003_ValidUserLoginTest - Clicked Login Link
+21:55:19.383 [main] INFO  testCases.TC003_ValidUserLoginTest - Inside Login Page
+21:55:19.384 [main] INFO  testCases.TC003_ValidUserLoginTest - Entering user credentials
+21:55:19.912 [main] INFO  testCases.TC003_ValidUserLoginTest - Clicked on Continue button
+21:55:30.318 [main] ERROR testCases.TC003_ValidUserLoginTest - Error Message -> Expected condition failed: waiting for title to contain "My Account". Current title: "Account Login" (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.204 (52183f9e99a..., userDataDir: C:\Users\subha\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53021}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53021/devtoo..., se:cdpVersion: 131.0.6778.205, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a61156cf74f24a021f18d470832ffccf
+21:56:47.660 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
   K:\Selenium Java Automation\OpenCart\grouping.xml
 
-12:37:33.449 [main] INFO  testCases.TC003_ValidUserLoginTest - **** Starting TC003_ValidUserLoginTest execution ****
-12:37:33.478 [main] INFO  testCases.TC003_ValidUserLoginTest - Inside Home Page
-12:37:33.546 [main] INFO  testCases.TC003_ValidUserLoginTest - Clicked My Account
-12:37:33.814 [main] INFO  testCases.TC003_ValidUserLoginTest - Clicked Login Link
-12:37:33.825 [main] INFO  testCases.TC003_ValidUserLoginTest - Inside Login Page
-12:37:33.825 [main] INFO  testCases.TC003_ValidUserLoginTest - Entering user credentials
-12:37:34.582 [main] INFO  testCases.TC003_ValidUserLoginTest - Clicked on Continue button
-12:37:34.595 [main] INFO  testCases.TC003_ValidUserLoginTest - Starting validation
-12:37:34.650 [main] INFO  testCases.TC003_ValidUserLoginTest - Validation successfull
-12:37:34.653 [main] INFO  testCases.TC003_ValidUserLoginTest - **** Finished TC003_ValidUserLoginTest execution ****
+21:56:51.410 [main] INFO  testCases.TC001_AccountRegistrationTest - **** Started TC001_AccountRegistrationTest execution ****
+21:56:51.457 [main] INFO  testCases.TC001_AccountRegistrationTest - Inside the Home Page...
+21:56:51.557 [main] INFO  testCases.TC001_AccountRegistrationTest - Clicked on My Account
+21:56:52.016 [main] INFO  testCases.TC001_AccountRegistrationTest - Clicked on Register Link
+21:56:52.028 [main] INFO  testCases.TC001_AccountRegistrationTest - Inside Registration Page
+21:56:52.028 [main] INFO  testCases.TC001_AccountRegistrationTest - Entering all the Customer details...
+21:56:55.470 [main] INFO  testCases.TC001_AccountRegistrationTest - Successfully entered all the details of the Customer...
+21:56:56.560 [main] INFO  testCases.TC001_AccountRegistrationTest - Clicked on Continue button
+21:56:56.561 [main] INFO  testCases.TC001_AccountRegistrationTest - About to start validation message
+21:56:56.681 [main] INFO  testCases.TC001_AccountRegistrationTest - Validation Passed
+21:56:56.687 [main] INFO  testCases.TC001_AccountRegistrationTest - **** Finished TC001_AccountRegistrationTest execution ****
+21:57:00.500 [main] INFO  testCases.TC002_AccountRegistrationDiffPasswordTest - **** Starting TC002_AccountRegistrationDiffPasswordTest execution ****
+21:57:00.516 [main] INFO  testCases.TC002_AccountRegistrationDiffPasswordTest - Inside Home Page.
+21:57:00.659 [main] INFO  testCases.TC002_AccountRegistrationDiffPasswordTest - Clicked on My Account
+21:57:01.164 [main] INFO  testCases.TC002_AccountRegistrationDiffPasswordTest - Clicked on Register Link
+21:57:01.179 [main] INFO  testCases.TC002_AccountRegistrationDiffPasswordTest - Inside Registration Page
+21:57:01.179 [main] INFO  testCases.TC002_AccountRegistrationDiffPasswordTest - Entering customer details....
+21:57:04.310 [main] INFO  testCases.TC002_AccountRegistrationDiffPasswordTest - Entered all the details
+21:57:04.311 [main] INFO  testCases.TC002_AccountRegistrationDiffPasswordTest - Starting password mismatch message verfication....
+21:57:04.402 [main] INFO  testCases.TC002_AccountRegistrationDiffPasswordTest - Message verfication successfull
+21:57:04.403 [main] INFO  testCases.TC002_AccountRegistrationDiffPasswordTest - **** Finished TC002_AccountRegistrationDiffPasswordTest execution ****
+21:57:08.306 [main] INFO  testCases.TC003_ValidUserLoginTest - **** Starting TC003_ValidUserLoginTest execution ****
+21:57:08.317 [main] INFO  testCases.TC003_ValidUserLoginTest - Inside Home Page
+21:57:08.423 [main] INFO  testCases.TC003_ValidUserLoginTest - Clicked My Account
+21:57:08.786 [main] INFO  testCases.TC003_ValidUserLoginTest - Clicked Login Link
+21:57:08.807 [main] INFO  testCases.TC003_ValidUserLoginTest - Inside Login Page
+21:57:08.807 [main] INFO  testCases.TC003_ValidUserLoginTest - Entering user credentials
+21:57:09.604 [main] INFO  testCases.TC003_ValidUserLoginTest - Clicked on Continue button
+21:57:20.054 [main] ERROR testCases.TC003_ValidUserLoginTest - Error Message -> Expected condition failed: waiting for title to contain "My Account". Current title: "Account Login" (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.204 (52183f9e99a..., userDataDir: C:\Users\subha\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53103}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53103/devtoo..., se:cdpVersion: 131.0.6778.205, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8a863c42547294db5bfaa0d45b3a62a1
+22:07:25.863 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  K:\Selenium Java Automation\OpenCart\grouping.xml
+
+22:07:32.912 [main] INFO  testCases.TC001_AccountRegistrationTest - **** Started TC001_AccountRegistrationTest execution ****
+22:07:32.952 [main] INFO  testCases.TC001_AccountRegistrationTest - Inside the Home Page...
+22:07:33.102 [main] INFO  testCases.TC001_AccountRegistrationTest - Clicked on My Account
+22:07:33.585 [main] INFO  testCases.TC001_AccountRegistrationTest - Clicked on Register Link
+22:07:33.597 [main] INFO  testCases.TC001_AccountRegistrationTest - Inside Registration Page
+22:07:33.597 [main] INFO  testCases.TC001_AccountRegistrationTest - Entering all the Customer details...
+22:07:36.344 [main] INFO  testCases.TC001_AccountRegistrationTest - Successfully entered all the details of the Customer...
+22:07:37.265 [main] INFO  testCases.TC001_AccountRegistrationTest - Clicked on Continue button
+22:07:37.265 [main] INFO  testCases.TC001_AccountRegistrationTest - About to start validation message
+22:07:37.414 [main] INFO  testCases.TC001_AccountRegistrationTest - Validation Passed
+22:07:37.421 [main] INFO  testCases.TC001_AccountRegistrationTest - **** Finished TC001_AccountRegistrationTest execution ****
+22:07:41.603 [main] INFO  testCases.TC002_AccountRegistrationDiffPasswordTest - **** Starting TC002_AccountRegistrationDiffPasswordTest execution ****
+22:07:41.616 [main] INFO  testCases.TC002_AccountRegistrationDiffPasswordTest - Inside Home Page.
+22:07:41.725 [main] INFO  testCases.TC002_AccountRegistrationDiffPasswordTest - Clicked on My Account
+22:07:42.354 [main] INFO  testCases.TC002_AccountRegistrationDiffPasswordTest - Clicked on Register Link
+22:07:42.377 [main] INFO  testCases.TC002_AccountRegistrationDiffPasswordTest - Inside Registration Page
+22:07:42.378 [main] INFO  testCases.TC002_AccountRegistrationDiffPasswordTest - Entering customer details....
+22:07:45.522 [main] INFO  testCases.TC002_AccountRegistrationDiffPasswordTest - Entered all the details
+22:07:45.522 [main] INFO  testCases.TC002_AccountRegistrationDiffPasswordTest - Starting password mismatch message verfication....
+22:07:45.597 [main] INFO  testCases.TC002_AccountRegistrationDiffPasswordTest - Message verfication successfull
+22:07:45.598 [main] INFO  testCases.TC002_AccountRegistrationDiffPasswordTest - **** Finished TC002_AccountRegistrationDiffPasswordTest execution ****
+22:07:49.806 [main] INFO  testCases.TC003_ValidUserLoginTest - **** Starting TC003_ValidUserLoginTest execution ****
+22:07:49.817 [main] INFO  testCases.TC003_ValidUserLoginTest - Inside Home Page
+22:07:49.992 [main] INFO  testCases.TC003_ValidUserLoginTest - Clicked My Account
+22:07:50.407 [main] INFO  testCases.TC003_ValidUserLoginTest - Clicked Login Link
+22:07:50.452 [main] INFO  testCases.TC003_ValidUserLoginTest - Inside Login Page
+22:07:50.452 [main] INFO  testCases.TC003_ValidUserLoginTest - Entering user credentials
+22:07:51.158 [main] INFO  testCases.TC003_ValidUserLoginTest - Clicked on Continue button
+22:08:01.597 [main] ERROR testCases.TC003_ValidUserLoginTest - Error Message -> Expected condition failed: waiting for title to contain "My Account". Current title: "Account Login" (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.204 (52183f9e99a..., userDataDir: C:\Users\subha\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53349}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53349/devtoo..., se:cdpVersion: 131.0.6778.205, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: efd76a30bb1b4b7097abef3fd0f4761f
