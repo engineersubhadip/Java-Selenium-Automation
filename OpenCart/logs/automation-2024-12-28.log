@@ -1,0 +1,94 @@
+10:56:08.782 [main] INFO  testCases.TC004_LoginDataDrivenTest - Validation begins...
+10:56:19.173 [main] INFO  testCases.TC004_LoginDataDrivenTest - This combination is invalid and we are not logged in. Test case Pass laks@yahoo.com
+10:56:19.173 [main] INFO  testCases.TC004_LoginDataDrivenTest - Validation ends...
+10:56:19.173 [main] INFO  testCases.TC004_LoginDataDrivenTest - **** Finished TC004_LoginDataDrivenTest execution ****
+10:56:19.522 [main] INFO  testCases.TC004_LoginDataDrivenTest - **** Starting TC004_LoginDataDrivenTest execution ****
+10:56:19.535 [main] INFO  testCases.TC004_LoginDataDrivenTest - Inside the Home Page
+10:56:19.637 [main] INFO  testCases.TC004_LoginDataDrivenTest - Clicked My Account
+10:56:19.961 [main] INFO  testCases.TC004_LoginDataDrivenTest - Clicked Login Link from Home Page
+10:56:19.979 [main] INFO  testCases.TC004_LoginDataDrivenTest - Inside the Login Page
+10:56:19.979 [main] INFO  testCases.TC004_LoginDataDrivenTest - Entering user credentials
+10:56:20.657 [main] INFO  testCases.TC004_LoginDataDrivenTest - Clicked on Login Button and trying to Login...
+10:56:20.657 [main] INFO  testCases.TC004_LoginDataDrivenTest - Validation begins...
+10:56:20.719 [main] INFO  testCases.TC004_LoginDataDrivenTest - This combination is valid and we are successfully logged in. Test case Pass abc123@gmail.com
+10:56:21.068 [main] INFO  testCases.TC004_LoginDataDrivenTest - Inside Account Logout page
+10:56:21.364 [main] INFO  testCases.TC004_LoginDataDrivenTest - Validation ends...
+10:56:21.364 [main] INFO  testCases.TC004_LoginDataDrivenTest - **** Finished TC004_LoginDataDrivenTest execution ****
+10:56:21.641 [main] INFO  testCases.TC004_LoginDataDrivenTest - **** Starting TC004_LoginDataDrivenTest execution ****
+10:56:21.651 [main] INFO  testCases.TC004_LoginDataDrivenTest - Inside the Home Page
+10:56:21.767 [main] INFO  testCases.TC004_LoginDataDrivenTest - Clicked My Account
+10:56:22.104 [main] INFO  testCases.TC004_LoginDataDrivenTest - Clicked Login Link from Home Page
+10:56:22.110 [main] INFO  testCases.TC004_LoginDataDrivenTest - Inside the Login Page
+10:56:22.110 [main] INFO  testCases.TC004_LoginDataDrivenTest - Entering user credentials
+10:56:22.815 [main] INFO  testCases.TC004_LoginDataDrivenTest - Clicked on Login Button and trying to Login...
+10:56:22.815 [main] INFO  testCases.TC004_LoginDataDrivenTest - Validation begins...
+10:56:33.192 [main] INFO  testCases.TC004_LoginDataDrivenTest - This combination is invalid and we are not logged in. Test case Pass 
+10:56:33.192 [main] INFO  testCases.TC004_LoginDataDrivenTest - Validation ends...
+10:56:33.192 [main] INFO  testCases.TC004_LoginDataDrivenTest - **** Finished TC004_LoginDataDrivenTest execution ****
+10:57:39.713 [main] INFO  testCases.TC001_AccountRegistrationTest - **** Started TC001_AccountRegistrationTest execution ****
+10:57:39.748 [main] INFO  testCases.TC001_AccountRegistrationTest - Inside the Home Page...
+10:57:39.829 [main] INFO  testCases.TC001_AccountRegistrationTest - Clicked on My Account
+10:57:40.170 [main] INFO  testCases.TC001_AccountRegistrationTest - Clicked on Register Link
+10:57:40.193 [main] INFO  testCases.TC001_AccountRegistrationTest - Inside Registration Page
+10:57:40.193 [main] INFO  testCases.TC001_AccountRegistrationTest - Entering all the Customer details...
+10:57:42.114 [main] INFO  testCases.TC001_AccountRegistrationTest - Successfully entered all the details of the Customer...
+10:57:42.644 [main] INFO  testCases.TC001_AccountRegistrationTest - Clicked on Continue button
+10:57:42.645 [main] INFO  testCases.TC001_AccountRegistrationTest - About to start validation message
+10:57:42.702 [main] INFO  testCases.TC001_AccountRegistrationTest - Validation Passed
+10:57:42.704 [main] INFO  testCases.TC001_AccountRegistrationTest - **** Finished TC001_AccountRegistrationTest execution ****
+10:57:45.338 [main] INFO  testCases.TC003_ValidUserLoginTest - **** Starting TC003_ValidUserLoginTest execution ****
+10:57:45.349 [main] INFO  testCases.TC003_ValidUserLoginTest - Inside Home Page
+10:57:45.424 [main] INFO  testCases.TC003_ValidUserLoginTest - Clicked My Account
+10:57:45.683 [main] INFO  testCases.TC003_ValidUserLoginTest - Clicked Login Link
+10:57:45.695 [main] INFO  testCases.TC003_ValidUserLoginTest - Inside Login Page
+10:57:45.695 [main] INFO  testCases.TC003_ValidUserLoginTest - Entering user credentials
+10:57:46.253 [main] INFO  testCases.TC003_ValidUserLoginTest - Clicked on Continue button
+10:57:56.769 [main] ERROR testCases.TC003_ValidUserLoginTest - Error Message -> Expected condition failed: waiting for title to contain "My Account". Current title: "Account Login" (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.204 (52183f9e99a..., userDataDir: C:\Users\subha\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50565}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50565/devtoo..., se:cdpVersion: 131.0.6778.205, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 0186a0d1ab5f6727b733fc03671be3b6
+10:58:32.016 [main] INFO  testCases.TC001_AccountRegistrationTest - **** Started TC001_AccountRegistrationTest execution ****
+10:58:32.055 [main] INFO  testCases.TC001_AccountRegistrationTest - Inside the Home Page...
+10:58:32.125 [main] INFO  testCases.TC001_AccountRegistrationTest - Clicked on My Account
+10:58:32.474 [main] INFO  testCases.TC001_AccountRegistrationTest - Clicked on Register Link
+10:58:32.486 [main] INFO  testCases.TC001_AccountRegistrationTest - Inside Registration Page
+10:58:32.486 [main] INFO  testCases.TC001_AccountRegistrationTest - Entering all the Customer details...
+10:58:34.441 [main] INFO  testCases.TC001_AccountRegistrationTest - Successfully entered all the details of the Customer...
+10:58:35.014 [main] INFO  testCases.TC001_AccountRegistrationTest - Clicked on Continue button
+10:58:35.014 [main] INFO  testCases.TC001_AccountRegistrationTest - About to start validation message
+10:58:35.065 [main] INFO  testCases.TC001_AccountRegistrationTest - Validation Passed
+10:58:35.067 [main] INFO  testCases.TC001_AccountRegistrationTest - **** Finished TC001_AccountRegistrationTest execution ****
+10:58:37.901 [main] INFO  testCases.TC003_ValidUserLoginTest - **** Starting TC003_ValidUserLoginTest execution ****
+10:58:37.913 [main] INFO  testCases.TC003_ValidUserLoginTest - Inside Home Page
+10:58:37.982 [main] INFO  testCases.TC003_ValidUserLoginTest - Clicked My Account
+10:58:38.252 [main] INFO  testCases.TC003_ValidUserLoginTest - Clicked Login Link
+10:58:38.264 [main] INFO  testCases.TC003_ValidUserLoginTest - Inside Login Page
+10:58:38.264 [main] INFO  testCases.TC003_ValidUserLoginTest - Entering user credentials
+10:58:38.930 [main] INFO  testCases.TC003_ValidUserLoginTest - Clicked on Continue button
+10:58:38.944 [main] INFO  testCases.TC003_ValidUserLoginTest - Starting validation
+10:58:38.997 [main] INFO  testCases.TC003_ValidUserLoginTest - Validation successfull
+10:58:38.997 [main] INFO  testCases.TC003_ValidUserLoginTest - **** Finished TC003_ValidUserLoginTest execution ****
+11:33:26.908 [main] INFO  testCases.TC001_AccountRegistrationTest - **** Started TC001_AccountRegistrationTest execution ****
+11:33:26.942 [main] INFO  testCases.TC001_AccountRegistrationTest - Inside the Home Page...
+11:33:27.038 [main] INFO  testCases.TC001_AccountRegistrationTest - Clicked on My Account
+11:33:27.458 [main] INFO  testCases.TC001_AccountRegistrationTest - Clicked on Register Link
+11:33:27.474 [main] INFO  testCases.TC001_AccountRegistrationTest - Inside Registration Page
+11:33:27.474 [main] INFO  testCases.TC001_AccountRegistrationTest - Entering all the Customer details...
+11:33:29.303 [main] INFO  testCases.TC001_AccountRegistrationTest - Successfully entered all the details of the Customer...
+11:33:30.028 [main] INFO  testCases.TC001_AccountRegistrationTest - Clicked on Continue button
+11:33:30.028 [main] INFO  testCases.TC001_AccountRegistrationTest - About to start validation message
+11:33:30.089 [main] INFO  testCases.TC001_AccountRegistrationTest - Validation Passed
+11:33:30.091 [main] INFO  testCases.TC001_AccountRegistrationTest - **** Finished TC001_AccountRegistrationTest execution ****
+11:33:33.332 [main] INFO  testCases.TC003_ValidUserLoginTest - **** Starting TC003_ValidUserLoginTest execution ****
+11:33:33.345 [main] INFO  testCases.TC003_ValidUserLoginTest - Inside Home Page
+11:33:33.417 [main] INFO  testCases.TC003_ValidUserLoginTest - Clicked My Account
+11:33:33.702 [main] INFO  testCases.TC003_ValidUserLoginTest - Clicked Login Link
+11:33:33.710 [main] INFO  testCases.TC003_ValidUserLoginTest - Inside Login Page
+11:33:33.710 [main] INFO  testCases.TC003_ValidUserLoginTest - Entering user credentials
+11:33:34.464 [main] INFO  testCases.TC003_ValidUserLoginTest - Clicked on Continue button
+11:33:34.476 [main] INFO  testCases.TC003_ValidUserLoginTest - Starting validation
+11:33:34.529 [main] INFO  testCases.TC003_ValidUserLoginTest - Validation successfull
+11:33:34.529 [main] INFO  testCases.TC003_ValidUserLoginTest - **** Finished TC003_ValidUserLoginTest execution ****
+11:44:42.993 [main] INFO  testCases.TC001_AccountRegistrationTest - **** Started TC001_AccountRegistrationTest execution ****
