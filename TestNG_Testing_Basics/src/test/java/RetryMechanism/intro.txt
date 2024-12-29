@@ -26,3 +26,4 @@ Inside "transform" method, we passing the location of the "RetryAnalyzer" class.
 So we will go to "RetryAnalyzer" class, and we will check what is the maxLimit.
 If the counter is < retryLimit, we will re-execute the test case else mark it as failed. 
 
+If the Test case gets passed, in the first attempt, the retry mechanism will not be executed
