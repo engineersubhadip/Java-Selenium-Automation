@@ -1,0 +1,19 @@
+Lets say I have 10 TCs, out of which 4 TCs are getting failed, while the rest are getting passed.
+But I want to give them one more chance to execute them before actually failing them.
+
+This is known as Retry Mechanism.
+
+These issues can be quite intermittent, such as Browser got crashed, Taking a bit more time to load.
+
+In TestNG, there is a listener available "IRetryAnalyzer". Using that we will retry the failure test cases.
+
+I will provide counter = 3;
+
+Then each failure test cases will be executed a maximum of 3 times.
+If they got passed in that time, the ultimate result will be PASSED.
+
+We can apply retry mechanism at :-
+
+1. @Test level -> Using IRetryAnalyzer interface
+2. At runtime -> Using IAnnotationTransformer Interface (Best Approach)
+
