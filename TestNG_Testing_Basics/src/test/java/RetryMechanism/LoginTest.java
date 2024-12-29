@@ -1,6 +1,7 @@
 package RetryMechanism;
 
 import org.testng.Assert;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 public class LoginTest {
@@ -12,8 +13,15 @@ public class LoginTest {
 	}
 	*/
 	
+	@BeforeMethod
+	public void bt () {
+		System.out.println("Inside Before Method");
+	}
+	
+	
 	@Test
 	public void TC001_LoginTest () throws InterruptedException {
+		System.out.println("Inside Test Case");
 		Assert.assertEquals(true, false);
 	}
 }

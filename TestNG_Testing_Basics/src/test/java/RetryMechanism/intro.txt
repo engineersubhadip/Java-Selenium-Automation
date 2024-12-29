@@ -17,3 +17,12 @@ We can apply retry mechanism at :-
 1. @Test level -> Using IRetryAnalyzer interface
 2. At runtime -> Using IAnnotationTransformer Interface (Best Approach)
 
+What actually happens behind the scenes when we apply listener during run-time ?
+
+-> We have 100 Tcs, out of which 30 got failed.
+My "RetyAnnotationTransform" class will read these 30 test cases at the run time.
+And for each of the test cases, "RetyAnnotationTransform" class will invoke the "transform" method inside it.
+Inside "transform" method, we passing the location of the "RetryAnalyzer" class.
+So we will go to "RetryAnalyzer" class, and we will check what is the maxLimit.
+If the counter is < retryLimit, we will re-execute the test case else mark it as failed. 
+
