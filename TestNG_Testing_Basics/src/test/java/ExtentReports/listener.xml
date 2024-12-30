@@ -4,8 +4,8 @@
 <suite name="ListenerSuite">
 
 	<listeners>
-		<!-- <listener class-name="ExtentReports.Listener" /> -->
-		<listener class-name="ExtentReports.ExtentReportManager" />
+		<listener class-name="ExtentReports.Listener" />
+		<!--<listener class-name="ExtentReports.ExtentReportManager" />-->
 	</listeners>
 
 	<test name="Test1">

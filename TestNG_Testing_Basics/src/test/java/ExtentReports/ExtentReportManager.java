@@ -1,9 +1,9 @@
 package ExtentReports;
 
-import java.io.File;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.List;
 
 import org.testng.ITestContext;
 import org.testng.ITestListener;
@@ -57,6 +57,10 @@ public class ExtentReportManager implements ITestListener {
 		extent.setSystemInfo("Owner Name", System.getProperty("user.name"));
 		extent.setSystemInfo("Browser Name", context.getCurrentXmlTest().getParameter("browser"));
 		extent.setSystemInfo("OS Name", context.getCurrentXmlTest().getParameter("os"));
+		List<String> groups = context.getCurrentXmlTest().getIncludedGroups();
+		if (!groups.isEmpty()) {
+			extent.setSystemInfo("Group", groups.toString());
+		}
 	}
 
 	
