@@ -17,6 +17,15 @@ public class BasePage {
 		PageFactory.initElements(driver, this);
 	}
 	
+	public boolean checkPageStatus (String pageTitle) {
+		try {
+			waitForTitleToLoad(pageTitle);
+			return true;
+		} catch (Exception e) {
+			return false;
+		}
+	}
+	
 	public void waitForElementToAppear(By locator) {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 		wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
