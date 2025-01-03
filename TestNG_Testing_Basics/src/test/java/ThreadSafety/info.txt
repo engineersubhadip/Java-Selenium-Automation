@@ -1,0 +1,3 @@
+When one thread is running using some driver instance, another thread should not disturb the running thread -> Thread Safety
+Whatever type of objects we are going to make ThreadSafe, that we are going to store inside ThreadLocal
+private static ThreadLocal<WebDriver> tLocal = new ThreadLocal();

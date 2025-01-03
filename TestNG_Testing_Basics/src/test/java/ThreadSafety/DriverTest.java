@@ -20,7 +20,7 @@ public class DriverTest {
 	@Test
 	public void test2 () {
 		driver = new EdgeDriver();
-		driver.get("https://www.google.com");
+		driver.get("https://www.bing.com/");
 		System.out.println(driver.getTitle());
 		driver.quit();
 	}
