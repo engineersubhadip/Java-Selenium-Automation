@@ -17,9 +17,9 @@ To handle this THread Local comes into picture.
 
 We will put the original driver into the thread local object.
 And whenever a thread is accessing a driver we will capture the driver from the thread local object. 
-By doing so, we are actually getting a copy of the original driver.
+By doing so, we are actually getting local driver of the original driver.
 Now lets say another THread comes into play, it will also capture the driver from the thread local object , 
-this thread will receive another copy of the original WebDriver instance.
+this thread will receive another local driver of the original WebDriver instance.
 
 Now 2 threads are executing parallely both having their own independent copies of driver.
 Meaning one thread will now not impact the other thread as they have their own seperate copies of driver.
