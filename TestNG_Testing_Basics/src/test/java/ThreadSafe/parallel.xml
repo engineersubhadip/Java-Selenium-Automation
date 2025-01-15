@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="CrossBrowserSuite" thread-count="2" parallel="tests">
+
+	<test name="ChromeTest">
+		<classes>
+			<class name="ThreadSafe.TestCase1" />
+			<!--			<class name="ThreadSafe.TestCase2" />-->
+		</classes>
+	</test>
+
+	<test name="EdgeTest">
+		<classes>
+			<!--<class name="ThreadSafe.TestCase1" />-->
+			<class name="ThreadSafe.TestCase2" />
+		</classes>
+	</test>
+
+</suite>
