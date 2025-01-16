@@ -34,3 +34,38 @@ this thread will receive another local driver of the original WebDriver instance
 
 Now 2 threads are executing parallely both having their own independent copies of driver.
 Meaning one thread will now not impact the other thread as they have their own seperate copies of driver.
+
+-------------------
+Best example :-
+-------------------
+
+WebDriver driver;
+
+T1 executes
+------------
+driver = new ChromeDriver();
+tLocal.set(driver)
+
+T2 executes
+------------
+driver = new EdgeDriver();
+tLocal.set(driver);
+
+T3 executes
+-------------
+driver = new ChromeDriver();
+tLocal.set(driver);
+
+
+In the tLocal object the mapping will be :-
+
+T1_ID : chromeDriverInstance
+T2_ID : edgeDriverInstance
+t3_ID : chromeDriverInstance
+
+All the threads are working on independent WebDriver instances.
+The threads will not bother one another.
+
+** Note **
+
+T1 and T3 are having separate Chrome Driver instances.
