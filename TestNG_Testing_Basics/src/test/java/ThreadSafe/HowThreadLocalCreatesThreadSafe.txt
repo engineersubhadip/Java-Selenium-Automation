@@ -4,6 +4,9 @@ Its like 2 Threads trying to access the Critical Section of the Code at the same
 Since WebDriver is a shared object. If one thread has gotten the CPU Resource and executed some part of the code.
 Another thread when gotten the CPU resource might impact the driver and make the test case failed.
 
+** Note **
+Thread Local will make sure each thread has its own independent WebDriver instance.
+
 Consider an example :-
 
 Thread 1 gotten the CPU resource :-
