@@ -5,17 +5,28 @@ Since WebDriver is a shared object. If one thread has gotten the CPU Resource an
 Another thread when gotten the CPU resource might impact the driver and make the test case failed.
 
 Consider an example :-
+
 Thread 1 gotten the CPU resource :-
+-----------------------------------
 made driver as chrome driver and launched a WebPage and from there went to the Login Page.
+It has entered the userEmail, but before entering the password, CONTEXT SWITCH happens.
+
 Now THread 2 gotten the CPU resource :-
+-------------------------------------
 made the same driver as edge driver and launched a different page called Registration.
-Now again THread1 got the CPU
-And using the edge driver it will try to perform action on Chrome Browser.
+
+Now again THread1 got the CPU :-
+-----------------------------
+At this point the WebDriver instance is having EdgeDriver object.
+And using the edge driver it will try to perform action on Chrome Browser. (Since T1 is running on Chrome)
 
 So these kind of Issues are quite common.
 To handle this THread Local comes into picture.
 
 We will put the original driver into the thread local object.
+Whichever thread puts the original driver instance into the threadlocal object.
+A mapping is being made internally in the thread local object which stores the current thread ID and copy of Webdriver instance.
+
 And whenever a thread is accessing a driver we will capture the driver from the thread local object. 
 By doing so, we are actually getting local driver of the original driver.
 Now lets say another THread comes into play, it will also capture the driver from the thread local object , 
