@@ -2,9 +2,9 @@ package Practice;
 
 import java.time.Duration;
 
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Dimension;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -27,7 +27,9 @@ public class RightClick {
 		
 		a.moveToElement(target).contextClick().moveToElement(target2).contextClick().build().perform();
 		Thread.sleep(2000);
-		driver.switchTo().alert().accept();
+		Alert alert = driver.switchTo().alert();
+		System.out.println(alert.getText());
+		alert.accept();
 		Thread.sleep(2000);
 		
 		driver.quit();
