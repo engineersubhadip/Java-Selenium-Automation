@@ -25,6 +25,12 @@ public class ChildParentTraversal {
 		
 		String result = driver.findElement((By.xpath("//header/div/button[1]/following-sibling::button[1]"))).getText();
 		System.out.println(result);
+		
+//		Child to Parent Traversal :-
+//		Travel from "Practice" to Parent and then from Parent to "Login"
+		
+		String result2 = driver.findElement(By.xpath("//header/div/button[1]/parent::div/button[2]")).getText();
+		System.out.println(result2);
 	}
 
 }
