@@ -23,6 +23,13 @@ public class IDAndName {
 	
 		JavascriptExecutor js = (JavascriptExecutor)driver;
 		js.executeScript("arguments[0].click();", driver.findElement(By.xpath("//button[contains(@class,'signInBtn')]")));
+		
+//		CSS Selector :-
+		
+		System.out.println(driver.findElement(By.cssSelector(".error")).getText()); // Using Class Name
+		System.out.println(driver.findElement(By.cssSelector("*[class='error']")).getText()); // Using attribute
+		System.out.println(driver.findElement(By.cssSelector(".error[class='error']")).getText()); // Using class name and attribute
+		
 	}
 
 }
