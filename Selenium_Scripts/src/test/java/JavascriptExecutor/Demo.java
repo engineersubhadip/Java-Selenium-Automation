@@ -50,6 +50,11 @@ public class Demo {
 //		2. Scroll till the bottom of the Page :-
 		js.executeScript("window.scrollTo(0,document.body.scrollHeight)");
 		System.out.println(js.executeScript("return window.pageYOffset"));
+		
+//		3. Scroll till Top
+		
+		js.executeScript("window.scrollTo(0,-document.body.scrollHeight)");
+		System.out.println(js.executeScript("return window.pageYOffset"));
 	}
 
 }
