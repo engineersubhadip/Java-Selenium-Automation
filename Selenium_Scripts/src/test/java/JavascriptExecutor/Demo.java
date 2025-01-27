@@ -34,10 +34,18 @@ public class Demo {
 		
 		js.executeScript("arguments[0].click()", male);
 		
+		/*
 //		Scrolling the Page :-
 		
 		js.executeScript("window.scrollTo(0,1400)");
 		System.out.println(js.executeScript("return window.pageYOffset")); // to print 1400
+		*/
+		
+//		Scroll upto a particular Element :-
+//		1. Capture which element you want to scroll to :-
+		WebElement targetEle = driver.findElement(By.xpath("//h2[text()='Upload Files']"));
+		js.executeScript("arguments[0].scrollIntoView()",targetEle);
+		System.out.println(js.executeScript("return window.pageYOffset"));
 	}
 
 }
