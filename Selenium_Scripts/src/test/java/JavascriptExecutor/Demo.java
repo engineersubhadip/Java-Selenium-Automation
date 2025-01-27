@@ -46,6 +46,10 @@ public class Demo {
 		WebElement targetEle = driver.findElement(By.xpath("//h2[text()='Upload Files']"));
 		js.executeScript("arguments[0].scrollIntoView()",targetEle);
 		System.out.println(js.executeScript("return window.pageYOffset"));
+		
+//		2. Scroll till the bottom of the Page :-
+		js.executeScript("window.scrollTo(0,document.body.scrollHeight)");
+		System.out.println(js.executeScript("return window.pageYOffset"));
 	}
 
 }
