@@ -1,6 +1,10 @@
 package FileUpload;
 
+import static org.testng.Assert.assertTrue;
+
 import java.time.Duration;
+import java.util.HashSet;
+import java.util.List;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Dimension;
@@ -38,6 +42,30 @@ public class Demo {
 			Assert.fail();
 		}
 		
+//		Multiple Files Upload :-
+		
+		String file1 = "C:\\Interview Prep\\Useful Links.docx";
+		String file2 = "C:\\Interview Prep\\Selenium WebDriver Exceptions.docx";
+		HashSet<String> set = new HashSet<>();
+		set.add("Useful Links.docx");
+		set.add("Selenium WebDriver Exceptions.docx");
+		set.add("Courseware.txt");
+		
+		chooseFile.sendKeys(file1+"\n"+file2);
+		
+		List<WebElement> fileList = driver.findElements(By.xpath("//ul[@id='fileList']/li"));
+		
+		for (WebElement currEle : fileList) {
+			String currFileName = currEle.getText();
+			if (set.contains(currFileName)) {
+				continue;
+			} else {
+				System.out.println("File Upload Failed");
+				Assert.fail();
+			}
+		}
+		System.out.println("Multiple File Upload Success");
+		Assert.assertTrue(true);
 	}
 
 }
