@@ -33,6 +33,10 @@ public class Demo {
 		WebElement male = driver.findElement(By.id("male"));
 		
 		js.executeScript("arguments[0].click()", male);
+		
+//		Scrolling the Page :-
+		
+		js.executeScript("window.scrollTo(0,1400)");
 	}
 
 }
