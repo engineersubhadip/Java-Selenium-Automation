@@ -27,6 +27,12 @@ public class Demo {
 		JavascriptExecutor js = (JavascriptExecutor)driver;
 		
 		js.executeScript("arguments[0].setAttribute('value','Subhadip')", name);
+		
+//		Click via JavascriptExecutor :-
+		
+		WebElement male = driver.findElement(By.id("male"));
+		
+		js.executeScript("arguments[0].click()", male);
 	}
 
 }
