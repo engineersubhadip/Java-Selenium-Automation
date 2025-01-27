@@ -37,6 +37,7 @@ public class Demo {
 //		Scrolling the Page :-
 		
 		js.executeScript("window.scrollTo(0,1400)");
+		System.out.println(js.executeScript("return window.pageYOffset")); // to print 1400
 	}
 
 }
