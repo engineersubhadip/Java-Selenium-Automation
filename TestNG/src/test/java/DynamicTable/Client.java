@@ -34,8 +34,6 @@ public class Client {
 		
 		driver.get("https://practice.expandtesting.com/dynamic-table");
 		
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-		
 		List<WebElement> tableHead = driver.findElements(By.xpath("//div[@id='table-description']/following-sibling::div //table/thead //th"));
 		List<WebElement> tableBody = driver.findElements(By.xpath("//div[@id='table-description']/following-sibling::div //table/tbody //tr"));
 		
