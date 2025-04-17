@@ -1,0 +1,7 @@
+{
+	"data" : [
+		{"emailAddress" : "bishnu@gmail.com", "password" : "password1", "status" : "green"},
+		{"emailAddress" : "raghav@sify.com", "password" : "password2", "status" : "red"},
+		{"emailAddress" : "subhadip@gmail.com", "password" : "password3", "status" : "green"}
+	]
+}
